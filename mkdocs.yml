@@ -1,0 +1,135 @@
+site_name: Fabric Documentation
+site_description: Official documentation for Fabric - AI-powered code assistant
+site_url: https://docs.fabric.dev/
+repo_url: https://github.com/farpointhq/Fabric-docs
+repo_name: farpointhq/Fabric-docs
+
+theme:
+  name: material
+  logo: assets/fabric-logo.svg
+  favicon: assets/favicon.png
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - no-lightbox
+      auto_caption: false
+      caption_position: bottom
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - abbr
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Configuration: getting-started/configuration.md
+  - User Guide:
+    - Overview: guide/overview.md
+    - Chat Interface: guide/chat.md
+    - Model Selection: guide/models.md
+    - Code Generation: guide/code-generation.md
+    - Projects: guide/projects.md
+  - Features:
+    - AI Models: features/models.md
+    - Agentic Mode: features/agentic-mode.md
+    - Tool Calling: features/tool-calling.md
+    - Knowledge Base: features/knowledge-base.md
+  - Reference:
+    - Keyboard Shortcuts: reference/shortcuts.md
+    - Settings: reference/settings.md
+    - API: reference/api.md
+  - Release Notes: releases.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/farpointhq/Fabric
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/fabricai
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  version:
+    provider: mike
+  generator: false
+
+copyright: Copyright &copy; 2025 Farpoint HQ
+
+extra_css:
+  - stylesheets/extra.css

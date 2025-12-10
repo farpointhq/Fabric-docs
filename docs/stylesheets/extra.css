@@ -1,0 +1,74 @@
+/* Hero section styling */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
+}
+
+/* Button styling */
+.md-button {
+  margin: 0.5rem;
+}
+
+/* Grid cards */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.grid.cards > * {
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+}
+
+/* Footer CTA */
+.footer-cta {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+}
+
+/* Image hover effects for lightbox */
+img:not(.no-lightbox) {
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 4px;
+}
+
+img:not(.no-lightbox):hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Code block styling */
+.highlight {
+  border-radius: 0.5rem;
+}
+
+/* Admonition tweaks */
+.admonition {
+  border-radius: 0.5rem;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+}
+
+th {
+  background: var(--md-code-bg-color);
+}
+
+/* Tab styling */
+.tabbed-set {
+  margin: 1rem 0;
+}

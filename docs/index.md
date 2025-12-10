@@ -4,10 +4,12 @@
 
 # :material-robot: Fabric
 
-**AI-powered code assistant for developers**
+**The fastest way to code with AI, without giving up control**
 
-[Get Started](getting-started/installation.md){ .md-button .md-button--primary }
-[View on GitHub](https://github.com/farpointhq/Fabric){ .md-button }
+Secure, context-aware code generation that always aligns with your standards.
+
+[Join the Beta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[View Documentation](#what-is-fabric){ .md-button }
 
 </div>
 
@@ -15,7 +17,7 @@
 
 ## What is Fabric?
 
-Fabric is a powerful AI code assistant that helps you write, understand, and improve code. It combines the latest large language models with a sleek interface designed for developers.
+Fabric is a powerful AI code assistant that helps you write, understand, and improve code. It combines the latest large language models with a sleek interface designed for developers who want AI assistance without sacrificing control.
 
 <div class="grid cards" markdown>
 
@@ -23,88 +25,195 @@ Fabric is a powerful AI code assistant that helps you write, understand, and imp
 
     ---
 
-    Get instant code suggestions, explanations, and refactoring advice powered by state-of-the-art AI models.
+    Get instant code suggestions, explanations, and refactoring advice powered by state-of-the-art AI models like Claude, GPT-4, and Gemini.
 
--   :material-cog:{ .lg .middle } **Multiple Models**
+    [:octicons-arrow-right-24: Learn about models](features/models.md)
+
+-   :material-tab:{ .lg .middle } **Multi-Chat Workspace**
 
     ---
 
-    Choose from Claude, GPT-4, Gemini, and more. Switch models mid-conversation for the best results.
+    Work on multiple features, bug fixes, and explorations simultaneously with tabbed conversations and chat groups.
+
+    [:octicons-arrow-right-24: Chat interface](guide/chat.md)
 
 -   :material-tools:{ .lg .middle } **Tool Calling**
 
     ---
 
-    AI can execute code, search files, and interact with your development environment safely.
+    AI can execute code, search files, read documentation, and interact with your development environment—safely and with your approval.
+
+    [:octicons-arrow-right-24: Available tools](features/tool-calling.md)
 
 -   :material-brain:{ .lg .middle } **Agentic Mode**
 
     ---
 
-    Let AI autonomously plan and execute multi-step tasks with full transparency.
+    Let AI autonomously plan and execute multi-step tasks like refactoring modules or creating new features—with full transparency and control.
+
+    [:octicons-arrow-right-24: Agentic workflows](features/agentic-mode.md)
 
 </div>
 
-## Quick Start
-
-```bash
-# Download Fabric for your platform
-# macOS (Apple Silicon)
-curl -LO https://github.com/farpointhq/Fabric/releases/latest/download/Fabric-arm64.dmg
-
-# macOS (Intel)
-curl -LO https://github.com/farpointhq/Fabric/releases/latest/download/Fabric-x64.dmg
-```
-
-Or visit our [releases page](https://github.com/farpointhq/Fabric/releases) for all platforms.
-
 ## Key Features
-
-### Intelligent Code Assistance
-
-Ask questions about your code, get explanations, and receive suggestions for improvements.
-
-![Code Assistance](assets/screenshots/code-assistance.png)
 
 ### Multi-Model Support
 
-Switch between AI models based on your task:
+Switch between AI models based on your task. Each model has different strengths:
 
-| Model | Best For |
-|-------|----------|
-| Claude 3.5 Sonnet | Complex reasoning, code review |
-| GPT-4o | General assistance, quick answers |
-| Claude 3.5 Haiku | Fast responses, simple tasks |
-| Gemini 1.5 Pro | Long context, documentation |
+| Model | Best For | Speed | Context |
+|-------|----------|-------|---------|
+| **Claude 3.5 Sonnet** | Complex reasoning, code review, architecture | Medium | 200K |
+| **Claude 3.5 Haiku** | Quick tasks, simple questions | Fast | 200K |
+| **GPT-4o** | General assistance, broad knowledge | Medium | 128K |
+| **GPT-4o Mini** | Fast responses, cost-effective | Fast | 128K |
+| **Gemini 1.5 Pro** | Long documents, multimodal tasks | Medium | 1M |
+
+!!! tip "Switch Models Mid-Conversation"
+    You can switch models at any point in a conversation. Fabric maintains full context when you switch.
 
 ### Agentic Workflows
 
 Enable agentic mode for complex, multi-step tasks:
 
 ```
-"Create a React component with tests and documentation"
+"Refactor the authentication module to use JWT tokens,
+update all related tests, and document the changes."
 ```
 
 Fabric will:
 
-1. Plan the implementation
-2. Write the component code
-3. Generate unit tests
-4. Create documentation
-5. Present results for your review
+1. **Plan** the implementation steps
+2. **Execute** each step with your approval
+3. **Test** changes automatically
+4. **Document** what was changed
+5. **Present** results for your review
+
+[:octicons-arrow-right-24: Learn more about Agentic Mode](features/agentic-mode.md)
+
+### Context-Aware Assistance
+
+Fabric understands your project:
+
+- **Auto File Select** - Automatically suggests relevant files based on your question
+- **Project Summaries** - AI-generated summaries of your codebase
+- **Database Awareness** - Connect databases to get schema-aware SQL assistance
+- **Terminal Integration** - Execute commands directly from the chat
+
+### Privacy & Security
+
+Your code stays safe:
+
+- **Local Processing** - Files are processed locally, not sent to external servers
+- **API Key Control** - You manage your own API keys
+- **Approval Workflow** - Review and approve all file changes before they happen
+- **Audit Trail** - Full history of all AI actions
+
+## Getting Started
+
+!!! info "Beta Access"
+    Fabric is currently in private beta. [Join the waitlist](https://farpointalpha.com/fabric) to get access.
+
+Once you have access:
+
+<div class="grid cards" markdown>
+
+-   :material-download:{ .lg .middle } **1. Install**
+
+    ---
+
+    Download Fabric for macOS, Windows, or Linux from your beta email.
+
+    [:octicons-arrow-right-24: Installation guide](getting-started/installation.md)
+
+-   :material-key:{ .lg .middle } **2. Configure**
+
+    ---
+
+    Add your API key from Anthropic, OpenAI, or Google.
+
+    [:octicons-arrow-right-24: Configuration](getting-started/configuration.md)
+
+-   :material-rocket-launch:{ .lg .middle } **3. Start Coding**
+
+    ---
+
+    Open a project and start chatting with AI about your code.
+
+    [:octicons-arrow-right-24: Quick start](getting-started/quickstart.md)
+
+</div>
+
+## Example Prompts
+
+Here are some things you can ask Fabric:
+
+=== "Code Review"
+
+    ```
+    Review this function for potential bugs,
+    performance issues, and best practices:
+
+    [paste your code]
+    ```
+
+=== "Debugging"
+
+    ```
+    I'm getting this error when running my tests:
+
+    [paste error]
+
+    The relevant code is in src/auth/login.ts
+    ```
+
+=== "Feature Development"
+
+    ```
+    Create a React component for a sortable data table
+    with pagination, following the patterns in our
+    existing components.
+    ```
+
+=== "Refactoring"
+
+    ```
+    Refactor the UserService class to use dependency
+    injection. Update the tests accordingly.
+    ```
 
 ## Getting Help
 
-- **Documentation**: You're here! Browse the sidebar.
-- **GitHub Issues**: [Report bugs or request features](https://github.com/farpointhq/Fabric/issues)
-- **Discussions**: [Join the community](https://github.com/farpointhq/Fabric/discussions)
+<div class="grid cards" markdown>
+
+-   :material-book-open-variant:{ .lg .middle } **Documentation**
+
+    ---
+
+    You're here! Browse the sidebar for detailed guides.
+
+-   :material-github:{ .lg .middle } **GitHub**
+
+    ---
+
+    [Report issues](https://github.com/farpointhq/Fabric/issues) or [join discussions](https://github.com/farpointhq/Fabric/discussions)
+
+-   :material-keyboard:{ .lg .middle } **Keyboard Shortcuts**
+
+    ---
+
+    Press `⌘ /` (or `Ctrl /`) in Fabric to see all shortcuts.
+
+    [:octicons-arrow-right-24: Shortcuts reference](reference/shortcuts.md)
+
+</div>
 
 ---
 
 <div class="footer-cta" markdown>
 
-Ready to get started?
+Ready to accelerate your development?
 
-[Install Fabric](getting-started/installation.md){ .md-button .md-button--primary }
+[Join the Fabric Beta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
 
 </div>

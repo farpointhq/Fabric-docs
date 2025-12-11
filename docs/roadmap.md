@@ -36,57 +36,16 @@ We're building the AI coding assistant we always wanted: fast enough for daily u
 
 ---
 
-## Live Now
+## Recently Shipped
 
-### :material-brain: Deep Codebase Understanding
-
-Fabric doesn't treat your code like random text. It builds a semantic map of your entire codebase—understanding how files connect, where patterns repeat, and how changes might ripple through your code.
-
-When you search for something, you don't just get a file match. You get context about how that code fits into the bigger picture—even if you didn't ask for it.
-
-### :material-graph: Graph Tab — Explore Your Codebase Visually
-
-See your codebase as an interactive graph:
-
-- **Visualize connections** — How modules, files, and components relate
-- **Find complexity clusters** — Spot areas that might need refactoring
-- **Navigate unfamiliar code** — Understand large codebases without getting lost
-
-### :material-test-tube: TDD Mode
-
-Fabric's most rigorous workflow:
-
-1. **Plan** — AI researches your codebase, asks clarifying questions, creates an implementation plan
-2. **You approve** — Review and refine the plan
-3. **Test plan** — AI designs tests that verify the feature works correctly
-4. **You approve** — Review the test criteria
-5. **Red/Green loop** — AI writes failing tests first, then implements code until all tests pass
-
-No hardcoded retry limits. The AI keeps iterating until the tests pass or asks for help.
-
-### :material-lightning-bolt: Agentic Mode
-
-Let AI call tools autonomously—read files, run commands, edit code—while you supervise. Good for exploration and quick tasks where you don't need the full TDD rigor.
-
-### :material-clipboard-list: Plan Mode
-
-A lighter workflow: AI creates a plan, you approve it, then implementation proceeds. No test-first requirement.
-
-### :material-eye: Transparent Reasoning
-
-See the AI think through problems step-by-step. No more black boxes—understand *why* it suggests what it suggests.
-
-### :material-swap-horizontal: Multi-Model Selection
-
-Choose the right model for each task. Fast models for quick questions, powerful ones for complex reasoning. Switch mid-conversation without losing context.
-
-### :material-tab: Tab Groups
-
-Organize related conversations. Keep your "Auth Rewrite" separate from your "Sprint Bugs."
-
-### :material-shield-check: Approval Workflow
-
-Every file change requires your OK. Full audit trail of AI actions.
+- **Deep Codebase Understanding** — Semantic mapping of your entire codebase ([learn more](features/knowledge-base.md))
+- **Graph Tab** — Visual codebase exploration
+- **TDD Mode** — Plan → Test plan → Red/Green loop until tests pass
+- **Agentic Mode** — Autonomous tool calling with supervision
+- **Plan Mode** — Lighter workflow without test-first requirement
+- **Multi-Model Selection** — Choose the right model for each task
+- **Tab Groups** — Organize related conversations
+- **Transparent Reasoning** — See the AI think step-by-step
 
 ---
 

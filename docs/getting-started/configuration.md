@@ -16,9 +16,9 @@ Fabric supports multiple AI providers. Configure your API keys in Settings.
 
 | Provider | Models | Get API Key |
 |----------|--------|-------------|
-| Anthropic | Claude 3.5 Sonnet, Claude 3 Opus, Haiku | [console.anthropic.com](https://console.anthropic.com/) |
-| OpenAI | GPT-4o, GPT-4 Turbo, o1 | [platform.openai.com](https://platform.openai.com/api-keys) |
-| Google | Gemini 1.5 Pro, Gemini 1.5 Flash | [aistudio.google.com](https://aistudio.google.com/app/apikey) |
+| Anthropic | Claude Opus 4.5, Sonnet 4.5, Haiku 4.5 | [console.anthropic.com](https://console.anthropic.com/) |
+| OpenAI | GPT-5 Pro, GPT-5.1, GPT-5.1 Codex, GPT-5 Nano | [platform.openai.com](https://platform.openai.com/api-keys) |
+| Google | Gemini 3.0 Pro, Gemini 2.5 Flash | [aistudio.google.com](https://aistudio.google.com/app/apikey) |
 | OpenRouter | All models | [openrouter.ai](https://openrouter.ai/keys) |
 
 !!! info "OpenRouter"

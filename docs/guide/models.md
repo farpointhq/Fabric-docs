@@ -8,30 +8,32 @@ Choose the right AI model for your task.
 
 | Model | Best For | Context | Speed |
 |-------|----------|---------|-------|
-| Claude 3.5 Sonnet | Complex reasoning, code review | 200k | Fast |
-| Claude 3 Opus | Nuanced analysis, creative tasks | 200k | Moderate |
-| Claude 3.5 Haiku | Quick tasks, simple questions | 200k | Very Fast |
+| Claude Opus 4.5 | Complex reasoning, code review, architecture | 200k | Medium |
+| Claude Sonnet 4.5 | Balanced performance, daily driver | 200k | Fast |
+| Claude Haiku 4.5 | Quick tasks, simple questions | 200k | Very Fast |
 
 ### OpenAI
 
 | Model | Best For | Context | Speed |
 |-------|----------|---------|-------|
-| GPT-4o | General assistance | 128k | Fast |
-| GPT-4 Turbo | Complex tasks | 128k | Moderate |
-| o1-preview | Deep reasoning, math | 128k | Slow |
+| GPT-5 Pro | Advanced reasoning, general assistance | 400k | Medium |
+| GPT-5.1 | Balanced intelligence and speed | 400k | Fast |
+| GPT-5.1 Codex | Code-specialized tasks | 400k | Fast |
+| GPT-5.1 Codex Mini | Quick code tasks | 400k | Very Fast |
+| GPT-5 Nano | Fast responses, cost-effective | 400k | Very Fast |
 
 ### Google
 
 | Model | Best For | Context | Speed |
 |-------|----------|---------|-------|
-| Gemini 1.5 Pro | Long documents | 1M | Moderate |
-| Gemini 1.5 Flash | Quick responses | 1M | Very Fast |
+| Gemini 3.0 Pro | Long documents, multimodal tasks | 1M | Medium |
+| Gemini 2.5 Flash | Quick responses, cost-effective | 1M | Fast |
 
 ## Choosing a Model
 
 ### For Code Review
 
-**Recommended: Claude 3.5 Sonnet**
+**Recommended: Claude Opus 4.5 or Claude Sonnet 4.5**
 
 - Excellent at understanding context
 - Catches subtle bugs
@@ -39,7 +41,7 @@ Choose the right AI model for your task.
 
 ### For Quick Questions
 
-**Recommended: Claude 3.5 Haiku or GPT-4o**
+**Recommended: Claude Haiku 4.5 or GPT-5 Nano**
 
 - Fast responses
 - Good for simple explanations
@@ -47,7 +49,7 @@ Choose the right AI model for your task.
 
 ### For Long Documents
 
-**Recommended: Gemini 1.5 Pro**
+**Recommended: Gemini 3.0 Pro**
 
 - 1 million token context
 - Great for analyzing codebases
@@ -55,11 +57,12 @@ Choose the right AI model for your task.
 
 ### For Complex Reasoning
 
-**Recommended: o1-preview**
+**Recommended: Claude Opus 4.5 or GPT-5 Pro**
 
 - Deep thinking on hard problems
 - Mathematical proofs
 - Algorithm design
+- Extended reasoning capabilities
 
 ## Switching Models
 
@@ -76,6 +79,6 @@ Models vary in price. Check your provider's pricing page for details.
 
 | Tier | Examples | Use Case |
 |------|----------|----------|
-| Economy | Haiku, Flash | High-volume, simple tasks |
-| Standard | Sonnet, GPT-4o | Daily driver, most tasks |
-| Premium | Opus, o1 | Complex analysis, important tasks |
+| Economy | Haiku 4.5, Gemini 2.5 Flash, GPT-5 Nano | High-volume, simple tasks |
+| Standard | Sonnet 4.5, GPT-5.1 Codex | Daily driver, most tasks |
+| Premium | Opus 4.5, GPT-5 Pro | Complex analysis, important tasks |

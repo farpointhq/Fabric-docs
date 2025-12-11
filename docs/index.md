@@ -25,7 +25,7 @@ Fabric is a powerful AI code assistant that helps you write, understand, and imp
 
     ---
 
-    Get instant code suggestions, explanations, and refactoring advice powered by state-of-the-art AI models like Claude, GPT-4, and Gemini.
+    Get instant code suggestions, explanations, and refactoring advice powered by state-of-the-art AI models like Claude 4.5, GPT-5, and Gemini 3.0.
 
     [:octicons-arrow-right-24: Learn about models](features/models.md)
 
@@ -63,11 +63,12 @@ Switch between AI models based on your task. Each model has different strengths:
 
 | Model | Best For | Speed | Context |
 |-------|----------|-------|---------|
-| **Claude 3.5 Sonnet** | Complex reasoning, code review, architecture | Medium | 200K |
-| **Claude 3.5 Haiku** | Quick tasks, simple questions | Fast | 200K |
-| **GPT-4o** | General assistance, broad knowledge | Medium | 128K |
-| **GPT-4o Mini** | Fast responses, cost-effective | Fast | 128K |
-| **Gemini 1.5 Pro** | Long documents, multimodal tasks | Medium | 1M |
+| **Claude Opus 4.5** | Complex reasoning, code review, architecture | Medium | 200K |
+| **Claude Sonnet 4.5** | Balanced performance, daily driver | Fast | 200K |
+| **Claude Haiku 4.5** | Quick tasks, simple questions | Very Fast | 200K |
+| **GPT-5 Pro** | Advanced reasoning, general assistance | Medium | 400K |
+| **GPT-5.1 Codex** | Code-specialized tasks | Fast | 400K |
+| **Gemini 3.0 Pro** | Long documents, multimodal tasks | Medium | 1M |
 
 !!! tip "Switch Models Mid-Conversation"
     You can switch models at any point in a conversation. Fabric maintains full context when you switch.

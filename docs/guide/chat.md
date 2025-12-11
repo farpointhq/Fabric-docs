@@ -179,7 +179,7 @@ Simply drag files from your file explorer into the chat input area. Supported fi
 
 ### Image Attachments
 
-For models that support vision (Claude 3, GPT-4o):
+For models that support vision (Claude 4.5, GPT-5, Gemini 3.0):
 
 1. Drag and drop an image, or
 2. Paste from clipboard (`⌘ V`), or
@@ -371,8 +371,8 @@ Don't expect perfection on the first try. Iterate:
 
 | Task | Recommended Model |
 |------|-------------------|
-| Complex architecture decisions | Claude 4.5 Sonnet |
-| Quick syntax questions | Claude 4.5 Haiku |
+| Complex architecture decisions | Claude Opus 4.5 |
+| Quick syntax questions | Claude Haiku 4.5 |
 | Broad general knowledge | GPT-5 Pro |
 | Long document analysis | Gemini 3.0 Pro |
 

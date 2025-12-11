@@ -6,54 +6,106 @@ Master Fabric with keyboard shortcuts.
 
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
-| Settings | `⌘ ,` | `Ctrl ,` |
-| New Chat | `⌘ N` | `Ctrl N` |
-| Close Chat | `⌘ W` | `Ctrl W` |
-| Toggle Sidebar | `⌘ B` | `Ctrl B` |
-| Search | `⌘ K` | `Ctrl K` |
-| Help | `⌘ /` | `Ctrl /` |
+| Open Project | `⌘ O` | `Ctrl O` |
+| New Window | `⌘ N` | `Ctrl N` |
+| Close Window | `⌘ W` | `Ctrl W` |
+| Toggle Sidebar | `Ctrl B` | `Ctrl B` |
+| File Search | `⌘ F` | `Ctrl F` |
+
+!!! note "Toggle Sidebar Bug"
+    Currently, Toggle Sidebar uses `Ctrl B` on all platforms (including macOS). This is a known bug - it should use `⌘ B` on macOS.
+
+## View
+
+| Action | macOS | Windows/Linux |
+|--------|-------|---------------|
+| Zoom In | `⌘ +` or `⌘ =` | `Ctrl +` or `Ctrl =` |
+| Zoom Out | `⌘ -` | `Ctrl -` |
+| Reset Zoom | `⌘ 0` | `Ctrl 0` |
+| Reload | `⌘ R` | `Ctrl R` |
+| Force Reload | `⌘ ⇧ R` | `Ctrl Shift R` |
+| Toggle DevTools | `⌘ ⌥ I` | `Ctrl Shift I` |
+| Toggle Full Screen | `^ ⌘ F` | `F11` |
 
 ## Chat
 
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
-| Send Message | `⌘ Enter` | `Ctrl Enter` |
-| New Line | `Enter` | `Enter` |
-| Stop Generation | `Escape` | `Escape` |
-| Regenerate | `⌘ ⇧ R` | `Ctrl Shift R` |
-| Copy Last Response | `⌘ ⇧ C` | `Ctrl Shift C` |
+| Send Message | `Enter` | `Enter` |
+| New Line | `Shift Enter` | `Shift Enter` |
+| Stop Generation | Click stop button | Click stop button |
 
-## Navigation
+!!! tip "Chat Input Shortcuts"
+    - Press `Enter` to send your message (not `⌘ Enter` or `Ctrl Enter`)
+    - Press `Shift Enter` to add a new line without sending
+
+## Terminal
 
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
-| Previous Chat | `⌘ [` | `Ctrl [` |
-| Next Chat | `⌘ ]` | `Ctrl ]` |
-| Go to Chat 1-9 | `⌘ 1-9` | `Ctrl 1-9` |
-| Focus Input | `⌘ L` | `Ctrl L` |
+| Toggle Terminal | `Ctrl \`` | `Ctrl \`` |
+
+## Voice Input
+
+| Action | macOS | Windows/Linux |
+|--------|-------|---------------|
+| Push-to-Talk | Hold `Right ⌥` (Right Option) | Hold `Right Ctrl` |
+
+!!! tip "Voice Recording"
+    Hold down the Right Option key (macOS) or Right Control key (Windows/Linux) to start recording. Release to stop and transcribe.
+
+    The voice button in the chat input also works - click once to start, click again to stop.
 
 ## Editor
 
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
 | Copy | `⌘ C` | `Ctrl C` |
+| Cut | `⌘ X` | `Ctrl X` |
 | Paste | `⌘ V` | `Ctrl V` |
+| Paste and Match Style | `⌘ ⇧ V` | - |
 | Select All | `⌘ A` | `Ctrl A` |
 | Undo | `⌘ Z` | `Ctrl Z` |
+| Redo | `⌘ ⇧ Z` | `Ctrl Y` |
 
-## Agentic Mode
+## Cheat Sheet
 
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
-| Toggle Agentic | `⌘ ⇧ A` | `Ctrl Shift A` |
-| Approve Action | `⌘ Enter` | `Ctrl Enter` |
-| Reject Action | `Escape` | `Escape` |
+| Show Shortcuts | Hold `⌘` for 3 seconds | Hold `Ctrl` for 3 seconds |
 
-## Customization
+!!! tip "Quick Reference"
+    Hold down the Command key (macOS) or Control key (Windows/Linux) for 3 seconds to show a cheat sheet overlay with common shortcuts.
 
-Customize shortcuts in Settings > Keyboard:
+## Platform-Specific
 
-1. Open Settings (`⌘ ,`)
-2. Navigate to Keyboard
-3. Click on a shortcut to change it
-4. Press your new key combination
+### macOS Only
+
+| Action | Shortcut |
+|--------|----------|
+| Hide Fabric | `⌘ H` |
+| Hide Others | `⌘ ⌥ H` |
+| Minimize | `⌘ M` |
+| Start Speaking | System-dependent |
+| Stop Speaking | System-dependent |
+
+### Windows/Linux Only
+
+| Action | Shortcut |
+|--------|----------|
+| Minimize | `Ctrl M` |
+
+## Not Yet Implemented
+
+The following shortcuts are commonly found in similar applications but are **not currently implemented** in Fabric:
+
+- Settings (`⌘ ,` / `Ctrl ,`)
+- Previous/Next Chat (`⌘ [` / `⌘ ]`)
+- Go to Chat 1-9 (`⌘ 1-9` / `Ctrl 1-9`)
+- Focus Input (`⌘ L` / `Ctrl L`)
+- Regenerate Response (`⌘ ⇧ R` / `Ctrl Shift R`)
+- Toggle Agentic Mode (`⌘ ⇧ A` / `Ctrl Shift A`)
+- Copy Last Response (`⌘ ⇧ C` / `Ctrl Shift C`)
+
+!!! info "Feature Requests"
+    If you'd like to see any of these shortcuts implemented, please open an issue on the [Fabric GitHub repository](https://github.com/Farpoint/fabric).

@@ -6,269 +6,173 @@ Complete reference for all Fabric settings, organized by category.
 
 ---
 
-## API Keys
-
-Configure your AI provider API keys. You need at least one key to use Fabric.
-
-### Anthropic (Claude)
-
-| Setting | Description |
-|---------|-------------|
-| **API Key** | Your Anthropic API key from [console.anthropic.com](https://console.anthropic.com) |
-
-Get your key: [Anthropic Console](https://console.anthropic.com/) → API Keys → Create Key
-
-### OpenAI (GPT)
-
-| Setting | Description |
-|---------|-------------|
-| **API Key** | Your OpenAI API key from [platform.openai.com](https://platform.openai.com/api-keys) |
-| **Organization ID** | Optional. Your OpenAI organization ID |
-
-Get your key: [OpenAI Platform](https://platform.openai.com/api-keys) → API Keys → Create new secret key
-
-### Google (Gemini)
-
-| Setting | Description |
-|---------|-------------|
-| **API Key** | Your Google AI API key from [aistudio.google.com](https://aistudio.google.com/app/apikey) |
-
-Get your key: [Google AI Studio](https://aistudio.google.com/app/apikey) → Get API key
-
-### OpenRouter
-
-| Setting | Description |
-|---------|-------------|
-| **API Key** | Your OpenRouter API key from [openrouter.ai](https://openrouter.ai/keys) |
-
-OpenRouter provides access to multiple providers through a single API.
-
-!!! tip "API Key Security"
-    Your API keys are stored locally and encrypted. They are never sent to Farpoint servers.
-
----
-
 ## General
 
-Basic application settings.
+Configure project settings, chat management, and feature toggles.
 
-### Default Model
+### Project Description
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Default Model** | Model used for new conversations | Claude 3.5 Sonnet |
+| Setting | Description |
+|---------|-------------|
+| **Project Description** | Optional description of your project that helps the AI understand your codebase context |
 
-Choose from any model you have access to. This can be changed per-conversation.
+Set this in **Settings** → **General** → **Project Description**. This description is included in the system prompt when chatting.
 
-### Project Settings
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Default Project** | Project to open on startup | Last opened |
-| **Auto-index Files** | Automatically index project files | `true` |
-| **Ignore Patterns** | Files to exclude from indexing | `.git, node_modules, dist` |
-
-### Updates
+### Chat Management
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| **Check for Updates** | Automatically check for new versions | `true` |
-| **Auto-download Updates** | Download updates automatically | `false` |
+| **Enable Automatic Chat Cleanup** | Automatically removes inactive chats after a set number of days | `false` |
+| **Maximum Chat Age (days)** | Number of days before inactive chats are deleted | 30 |
+
+Configure in **Settings** → **General** → **Chat Management**.
+
+### Web Search
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **Enable Web Search** | Allow supported models to search the web during generation | `true` |
+
+When enabled, models that support web search (like Claude) can access current information from the internet.
+
+### File Tag Preprocessing
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **Enable File Tag Preprocessing** | Replace historical `<file>` tags with `<previously_proposed_edit>` tags before sending to LLM | `false` |
+
+This experimental feature may help reduce confusion but could impact model performance.
+
+### Clear Application Cache
+
+Clear all saved settings, model configurations, and cached application data. This requires an app restart.
+
+**Settings** → **General** → **Clear Cache**
 
 ---
 
-## Appearance
+## Models
 
-Customize the visual appearance of Fabric.
+Configure AI providers, API keys, and model settings.
 
-### Theme
+### Provider Management
 
-| Setting | Options | Default |
-|---------|---------|---------|
-| **Theme** | Light, Dark, System | System |
+Fabric supports multiple AI providers. Add and configure providers in **Settings** → **Models**.
 
-System theme follows your operating system's light/dark mode setting.
+**Supported Providers:**
 
-### Typography
+- **Anthropic** (Claude models)
+- **OpenAI** (GPT models)
+- **Google** (Gemini models)
+- **OpenRouter** (Multi-provider access)
+- **Custom OpenAI-Compatible Servers** (Local models, custom endpoints)
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Font Size** | Base text size in chat | 14px |
-| **Code Font Size** | Text size in code blocks | 13px |
-| **Font Family** | Chat text font | System UI |
-| **Code Font Family** | Code block font | JetBrains Mono, Menlo, monospace |
-| **Line Height** | Space between lines | 1.5 |
+### API Keys
 
-### Layout
+Each provider requires an API key:
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Sidebar Width** | Default sidebar width | 260px |
-| **Show Line Numbers** | Show line numbers in code blocks | `true` |
-| **Compact Mode** | Reduce spacing in UI | `false` |
+| Provider | Get Your Key |
+|----------|--------------|
+| **Anthropic** | [console.anthropic.com](https://console.anthropic.com/) → API Keys |
+| **OpenAI** | [platform.openai.com/api-keys](https://platform.openai.com/api-keys) |
+| **Google** | [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey) |
+| **OpenRouter** | [openrouter.ai/keys](https://openrouter.ai/keys) |
 
----
+!!! tip "API Key Security"
+    Your API keys are encrypted and stored locally. They are never sent to Farpoint servers.
 
-## Chat
+### Default Model Selection
 
-Configure chat behavior and AI responses.
+| Setting | Description |
+|---------|-------------|
+| **Default Chat Model** | Model used for new chat conversations |
+| **Default Merge Model** | Model used for file summarization and merging |
 
-### Response Settings
+Select models from **Settings** → **Models** by clicking the radio button next to a model name.
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Stream Responses** | Show responses as they generate | `true` |
-| **Show Timestamps** | Display message timestamps | `false` |
-| **Copy Button** | Show copy button on messages | `true` |
+### Model Customization
 
-### AI Behavior
+For each model, you can customize:
 
-| Setting | Description | Default | Range |
-|---------|-------------|---------|-------|
-| **Temperature** | Response randomness | 0.7 | 0.0 - 2.0 |
-| **Max Tokens** | Maximum response length | 4096 | 100 - 128000 |
-| **Top P** | Nucleus sampling parameter | 1.0 | 0.0 - 1.0 |
+| Setting | Description |
+|---------|-------------|
+| **Temperature** | Response randomness (0.0 - 2.0) |
+| **Max Tokens** | Maximum response length |
+| **Reasoning Effort** | For models like o1/o3: Low, Medium, or High |
+| **API Endpoint** | Custom endpoint for OpenAI-compatible providers |
 
 !!! info "Temperature Guide"
     - **0.0 - 0.3**: More focused, deterministic responses
-    - **0.4 - 0.7**: Balanced creativity and consistency
+    - **0.4 - 0.7**: Balanced creativity and consistency (default)
     - **0.8 - 1.0**: More creative, varied responses
     - **1.0+**: Experimental, may be incoherent
 
-### System Prompt
+### Adding Custom Models
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Custom System Prompt** | Additional instructions for the AI | Empty |
-| **Include in Context** | Whether to include system prompt | `true` |
+1. Go to **Settings** → **Models**
+2. Expand a provider
+3. Click **+ Add Model**
+4. Enter the model ID and configure settings
+5. Click **Save**
 
-Example system prompts:
-
-```
-You are a senior TypeScript developer. Prefer functional programming
-patterns and always include proper error handling.
-```
-
-```
-When reviewing code, check for:
-- Security vulnerabilities (OWASP Top 10)
-- Performance issues
-- Accessibility (WCAG)
-- Test coverage
-```
-
----
-
-## Context
-
-Configure how Fabric manages conversation context.
-
-### Context Window
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Max Context Tokens** | Maximum tokens to send to AI | Model-dependent |
-| **Include File Context** | Auto-include opened files | `true` |
-| **Context Preview** | Show context size indicator | `true` |
-
-### Auto-Summarization
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Enable Summarization** | Summarize long conversations | `true` |
-| **Summarize Threshold** | Token count to trigger summary | 50,000 |
-| **Summary Model** | Model for summarization | Same as chat |
-
-When enabled, Fabric automatically summarizes earlier parts of long conversations to stay within context limits.
-
-### File Handling
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Max File Size** | Largest file to include | 1MB |
-| **Binary File Handling** | How to handle binary files | Skip |
-| **Include Hidden Files** | Include dotfiles | `false` |
+This is useful for:
+- Local LLM servers (Ollama, LM Studio, vLLM)
+- Custom OpenAI-compatible endpoints
+- New models not yet in Fabric's defaults
 
 ---
 
 ## Permissions
 
-Control what actions the AI can take.
+Control what actions the AI can take on a per-chat basis.
 
-### Tool Permissions
+!!! warning "Per-Chat Permissions"
+    Permissions are managed per-chat, not globally. You must have an active chat to configure permissions.
 
-| Tool | Options | Default |
-|------|---------|---------|
-| **File Read** | Always Allow / Ask Once / Always Ask | Always Allow |
-| **File Write** | Always Allow / Ask Once / Always Ask | Ask Once |
-| **File Delete** | Always Allow / Ask Once / Always Ask | Always Ask |
-| **Shell Commands** | Always Allow / Ask Once / Always Ask | Ask Once |
-| **Web Requests** | Always Allow / Ask Once / Always Ask | Always Ask |
-| **Screenshots** | Always Allow / Ask Once / Always Ask | Always Ask |
+### Bash Command Allowlist
 
-### Command Safety
+Manage which bash commands the AI can run without asking for approval.
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Block Dangerous Commands** | Prevent obviously harmful commands | `true` |
-| **Command Allowlist** | Commands that don't need approval | `git status, npm test, ls` |
-| **Command Blocklist** | Commands always blocked | `rm -rf /, sudo rm` |
+**Settings** → **Permissions** → **Allowed Commands**
 
-### Path Restrictions
+- **Add Command**: Enter a command pattern and click Add
+- **Remove Command**: Click the delete icon next to a command
+- Commands are matched as exact strings (e.g., `git status`)
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Allowed Paths** | Directories tools can access | Project directory |
-| **Restricted Paths** | Directories tools cannot access | `/etc, /System, ~/Library` |
+### Examples
 
----
+Common commands to allowlist:
 
-## Agentic Mode
+```
+git status
+npm test
+ls -la
+cat package.json
+pwd
+```
 
-Configure autonomous task execution.
-
-### Execution Settings
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Enable Agentic Mode** | Allow agentic features | `true` |
-| **Show Plan** | Display plan before execution | `true` |
-| **Require Plan Approval** | Must approve plan to continue | `true` |
-| **Max Steps** | Maximum autonomous steps | 20 |
-| **Step Timeout** | Max time per step | 120s |
-
-### Safety Settings
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Sandbox Mode** | Run in isolated environment | `false` |
-| **Auto-Revert on Error** | Undo changes if task fails | `false` |
-| **Require Final Review** | Review changes before accepting | `true` |
-
-### Approval Workflow
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Approval Level** | Strict / Balanced / Permissive | Balanced |
-| **Batch Approvals** | Allow "Approve All Similar" | `true` |
-| **Pause on Error** | Stop and ask on errors | `true` |
+!!! tip "Security Note"
+    Only allowlist read-only or safe commands. Fabric asks for approval before running commands not on the allowlist.
 
 ---
 
 ## Shortcuts
 
-Customize keyboard shortcuts. See [Keyboard Shortcuts](shortcuts.md) for the full list.
+View all keyboard shortcuts for Fabric.
 
-### Customizing Shortcuts
+**Settings** → **Shortcuts**
 
-1. Go to **Settings** → **Shortcuts**
-2. Click on any shortcut
-3. Press your new key combination
-4. Click **Save**
+Shortcuts are organized by category:
 
-### Resetting Shortcuts
+- **General**: Window management, settings, help
+- **Chat**: New chat, send message, cancel
+- **Navigation**: Switch tabs, focus search
+- **Text Editing**: Format code, insert snippets
 
-Click **Reset to Defaults** to restore original shortcuts.
+!!! info "Customization Not Available"
+    Keyboard shortcuts are currently fixed and cannot be customized. This feature may be added in a future release.
+
+See [Keyboard Shortcuts](shortcuts.md) for the complete list.
 
 ---
 
@@ -276,30 +180,75 @@ Click **Reset to Defaults** to restore original shortcuts.
 
 Control data collection and privacy settings.
 
-### Telemetry
+### Anonymous Usage Analytics
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| **Send Usage Analytics** | Anonymous usage statistics | `false` |
-| **Send Error Reports** | Crash and error reports | `true` |
+| **Allow Anonymous Usage Analytics** | Share anonymous interaction data to help improve Fabric | `false` |
+
+**Settings** → **Privacy** → **Anonymous Usage Analytics**
 
 !!! info "What We Collect"
-    - **Usage Analytics** (opt-in): Feature usage, model selection, session duration
-    - **Error Reports** (opt-in): Crash logs, stack traces (no code or personal data)
+    When enabled, we collect:
 
-    We **never** collect: Your code, conversations, API keys, or personal information.
+    - Which buttons are clicked
+    - How users navigate through screens
+    - Feature usage patterns
 
-### Data Storage
+    We **never** collect:
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Clear Chat History** | Delete all conversation history | - |
-| **Clear Cache** | Delete cached data | - |
-| **Export Data** | Download all your data | - |
+    - Prompt content
+    - Code or file contents
+    - Usernames or personal information
+    - API keys
 
-### Local Data Location
+All sensitive areas are automatically masked from recordings.
 
-Your data is stored locally:
+### Error Reporting
+
+**Settings** → **Privacy** → **Error Reporting Settings**
+
+When an error occurs, you'll see a screen that allows you to:
+
+- View error details
+- Describe what you were doing when the error occurred
+- Submit a report to the development team
+- Restart the application
+
+Error reports include:
+
+- Error message and stack trace
+- App version and platform information
+- Your description (if provided)
+
+!!! tip "Privacy Note"
+    Error reports do not include personal information or file contents unless you explicitly include them in your description.
+
+---
+
+## Benchmark
+
+Test and compare model performance on your codebase.
+
+**Settings** → **Benchmark**
+
+The benchmark feature allows you to:
+
+1. Select a project to benchmark
+2. Choose models to test
+3. Run coding tasks against each model
+4. Compare performance, speed, and cost
+
+!!! info "Project Required"
+    You must have an active project open to run benchmarks.
+
+---
+
+## Data Storage
+
+All Fabric data is stored locally on your machine.
+
+### Storage Locations
 
 | Platform | Location |
 |----------|----------|
@@ -307,134 +256,35 @@ Your data is stored locally:
 | **Windows** | `%APPDATA%\Fabric\` |
 | **Linux** | `~/.config/Fabric/` |
 
----
+### What's Stored
 
-## Models
+- **Settings**: User preferences, API keys (encrypted)
+- **Chat History**: Conversation logs per project
+- **Model Configurations**: Custom model settings
+- **Permissions**: Per-chat command allowlists
+- **Cache**: Indexed file summaries, embeddings
 
-Configure available AI models.
+### Clearing Data
 
-### Enabled Models
+**Clear Cache**: **Settings** → **General** → **Clear Application Cache Data**
 
-Toggle which models appear in the model selector:
+This removes:
 
-| Provider | Models |
-|----------|--------|
-| **Anthropic** | Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 Opus |
-| **OpenAI** | GPT-4o, GPT-4o Mini, GPT-4 Turbo |
-| **Google** | Gemini 1.5 Pro, Gemini 1.5 Flash |
-| **OpenRouter** | All available models |
+- Saved settings
+- Model configurations
+- Cached application data
 
-### Model-Specific Settings
-
-Configure per-model settings:
-
-| Setting | Description |
-|---------|-------------|
-| **Display Name** | Custom name in model selector |
-| **Default Temperature** | Override default temperature |
-| **Max Context** | Override context window |
+Requires app restart after clearing.
 
 ---
 
-## Advanced
+## Theme
 
-Expert settings for advanced users.
+Fabric supports light and dark themes.
 
-### Debugging
+| Setting | Default |
+|---------|---------|
+| **Theme** | Dark |
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Log Level** | Logging verbosity (debug/info/warn/error) | info |
-| **Show Developer Tools** | Enable DevTools access | `false` |
-| **Verbose Tool Output** | Show full tool responses | `false` |
-
-### Network
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Proxy URL** | HTTP proxy for API calls | None |
-| **Request Timeout** | API request timeout | 120s |
-| **Retry Count** | Number of retries on failure | 3 |
-
-### Performance
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| **Hardware Acceleration** | Use GPU for rendering | `true` |
-| **Max Memory** | Memory limit for indexing | 512MB |
-| **Background Indexing** | Index files when idle | `true` |
-
----
-
-## Configuration File
-
-Settings are stored in JSON format at these locations:
-
-| Platform | Path |
-|----------|------|
-| **macOS** | `~/Library/Application Support/Fabric/config.json` |
-| **Windows** | `%APPDATA%\Fabric\config.json` |
-| **Linux** | `~/.config/Fabric/config.json` |
-
-### Example Configuration
-
-```json
-{
-  "appearance": {
-    "theme": "dark",
-    "fontSize": 14,
-    "codeFontSize": 13
-  },
-  "chat": {
-    "defaultModel": "claude-3.5-sonnet",
-    "temperature": 0.7,
-    "maxTokens": 4096,
-    "streamResponses": true
-  },
-  "permissions": {
-    "fileRead": "always_allow",
-    "fileWrite": "ask_once",
-    "fileDelete": "always_ask",
-    "shellCommands": "ask_once"
-  },
-  "agentic": {
-    "enabled": true,
-    "showPlan": true,
-    "maxSteps": 20
-  },
-  "privacy": {
-    "telemetry": false,
-    "errorReports": true
-  }
-}
-```
-
-!!! warning "Manual Editing"
-    If you edit the config file manually, restart Fabric for changes to take effect. Invalid JSON will be ignored.
-
----
-
-## Resetting Settings
-
-### Reset Individual Settings
-
-In the Settings panel, each section has a **Reset** button to restore defaults for that section.
-
-### Reset All Settings
-
-1. Go to **Settings** → **Advanced**
-2. Click **Reset All Settings**
-3. Confirm the reset
-
-This will not delete your chat history or API keys.
-
-### Factory Reset
-
-To completely reset Fabric:
-
-1. Quit Fabric
-2. Delete the configuration directory (see paths above)
-3. Restart Fabric
-
-!!! danger "Factory Reset"
-    This deletes all settings, chat history, and cached data. Export your data first if needed.
+!!! info "Theme Switching"
+    Theme switching via UI is not yet implemented. The app currently uses dark theme by default. Light theme support exists in the codebase but cannot be toggled from settings yet.

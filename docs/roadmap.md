@@ -38,15 +38,19 @@ We're building the AI coding assistant we always wanted: fast enough for daily u
 
 ## Live Now
 
+### :material-brain: Deep Codebase Understanding
+
+Fabric doesn't treat your code like random text. It builds a semantic map of your entire codebase—understanding how files connect, where patterns repeat, and how changes might ripple through your code.
+
+When you search for something, you don't just get a file match. You get context about how that code fits into the bigger picture—even if you didn't ask for it.
+
 ### :material-graph: Graph Tab — Explore Your Codebase Visually
 
-Fabric builds a semantic map of your entire codebase. Open the Graph Tab to:
+See your codebase as an interactive graph:
 
-- **See how modules connect** — Visualize relationships between files and components
+- **Visualize connections** — How modules, files, and components relate
 - **Find complexity clusters** — Spot areas that might need refactoring
-- **Understand unfamiliar code** — Navigate large codebases without getting lost
-
-When you search for code, Fabric uses this understanding to give you context about how that code fits into the bigger picture—even if you didn't ask for it.
+- **Navigate unfamiliar code** — Understand large codebases without getting lost
 
 ### :material-test-tube: TDD Mode
 

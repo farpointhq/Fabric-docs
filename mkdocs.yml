@@ -6,25 +6,25 @@ repo_name: farpointhq/Fabric-docs
 
 theme:
   name: material
-  logo: assets/fabric-logo.svg
-  favicon: assets/favicon.png
+  logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Dark mode
+    # Dark mode (default - matches Fabric app)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.instant
     - navigation.instant.progress

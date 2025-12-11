@@ -1,3 +1,103 @@
+/* =====================================================
+   Fabric Color Scheme
+   Matches the Fabric app's color palette
+   ===================================================== */
+
+/* CSS Variables for Fabric colors */
+:root {
+  /* Primary blues (from appColors) */
+  --fabric-blue-primary: #024b98;
+  --fabric-blue-hover: #0268c0;
+
+  /* Mint accent (used for toggles, success) */
+  --fabric-mint: #1BCA98;
+
+  /* Backgrounds (from unifiedUi) */
+  --fabric-bg-dark: #1b1b1b;
+  --fabric-bg-light: #242424;
+  --fabric-bg-lighter: #2e2e2e;
+
+  /* Text colors */
+  --fabric-text: #e1e1e1;
+  --fabric-text-muted: #999999;
+  --fabric-text-dim: #555555;
+
+  /* Borders */
+  --fabric-border: #626265;
+
+  /* Status colors */
+  --fabric-success: #6BD483;
+  --fabric-error: #E45234;
+  --fabric-warning: #e1d22c;
+}
+
+/* Dark mode (slate scheme) - primary theme for Fabric */
+[data-md-color-scheme="slate"] {
+  /* Primary color (buttons, links) */
+  --md-primary-fg-color: var(--fabric-blue-primary);
+  --md-primary-fg-color--light: var(--fabric-blue-hover);
+  --md-primary-fg-color--dark: #013570;
+  --md-primary-bg-color: var(--fabric-text);
+  --md-primary-bg-color--light: var(--fabric-text-muted);
+
+  /* Accent color (highlights, hover states) */
+  --md-accent-fg-color: var(--fabric-mint);
+  --md-accent-fg-color--transparent: rgba(27, 202, 152, 0.1);
+  --md-accent-bg-color: var(--fabric-text);
+  --md-accent-bg-color--light: var(--fabric-text-muted);
+
+  /* Background colors */
+  --md-default-bg-color: var(--fabric-bg-dark);
+  --md-default-bg-color--light: var(--fabric-bg-light);
+  --md-default-bg-color--lighter: var(--fabric-bg-lighter);
+  --md-default-bg-color--lightest: #383838;
+
+  /* Text colors */
+  --md-default-fg-color: var(--fabric-text);
+  --md-default-fg-color--light: var(--fabric-text-muted);
+  --md-default-fg-color--lighter: var(--fabric-text-dim);
+  --md-default-fg-color--lightest: #333333;
+
+  /* Code blocks */
+  --md-code-bg-color: #181818;
+  --md-code-fg-color: var(--fabric-text);
+
+  /* Footer */
+  --md-footer-bg-color: var(--fabric-bg-dark);
+  --md-footer-bg-color--dark: #151515;
+}
+
+/* Light mode - adapted Fabric colors for light backgrounds */
+[data-md-color-scheme="default"] {
+  /* Primary color */
+  --md-primary-fg-color: var(--fabric-blue-primary);
+  --md-primary-fg-color--light: var(--fabric-blue-hover);
+  --md-primary-fg-color--dark: #013570;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #f5f5f5;
+
+  /* Accent color */
+  --md-accent-fg-color: #159973;
+  --md-accent-fg-color--transparent: rgba(21, 153, 115, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #f5f5f5;
+}
+
+/* Header styling */
+.md-header {
+  background-color: var(--fabric-bg-dark);
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background-color: var(--fabric-bg-light);
+}
+
+/* Sidebar */
+.md-sidebar {
+  border-right-color: var(--fabric-border);
+}
+
 /* Hero section styling */
 .hero {
   text-align: center;

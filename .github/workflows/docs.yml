@@ -39,7 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material mkdocs-glightbox
+          pip install "mkdocs-material[imaging]" mkdocs-glightbox
 
       - name: Build docs
         run: mkdocs build

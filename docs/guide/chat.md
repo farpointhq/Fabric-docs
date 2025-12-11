@@ -21,7 +21,7 @@ The Fabric interface is designed for efficient coding conversations:
 │         │  └─────────────────────────────────────────────────┘ │
 │         │                                                       │
 │         ├───────────────────────────────────────────────────────┤
-│         │  [Model: Claude 3.5 Sonnet ▾] [Agentic: Off]         │
+│         │  [Model: Claude 4.5 Sonnet ▾] [Agentic: Off]         │
 │         │  ┌─────────────────────────────────────────────────┐ │
 │         │  │ Type your message...                   [Send]   │ │
 │         │  └─────────────────────────────────────────────────┘ │
@@ -36,7 +36,7 @@ The Fabric interface is designed for efficient coding conversations:
 | **Sidebar** | File browser, chat history, database | `⌘ B` toggle |
 | **Chat Area** | Conversation display | Scroll to navigate |
 | **Model Selector** | Choose AI model | Click to open |
-| **Input Box** | Type your messages | `⌘ Enter` to send |
+| **Input Box** | Type your messages | `Enter` to send |
 
 ---
 
@@ -176,20 +176,6 @@ Simply drag files from your file explorer into the chat input area. Supported fi
 2. Navigate to your file
 3. Click the **+** button next to the filename
 4. The file appears as an attachment in your input
-
-#### @ Mentions
-
-Type `@` to quickly reference files:
-
-```
-@src/components/Button.tsx
-@src/styles/theme.ts
-
-Can you update Button to use the new color tokens from theme?
-```
-
-!!! info "@ Mention Autocomplete"
-    After typing `@`, Fabric shows suggestions based on your project files. Keep typing to filter.
 
 ### Image Attachments
 
@@ -341,30 +327,6 @@ Create alternative conversation paths by editing earlier messages:
 
 The original conversation is preserved—you can switch between branches using the branch navigator.
 
-### System Prompts
-
-Customize the AI's behavior with system prompts:
-
-1. Open **Settings** (`⌘ ,`)
-2. Go to **Chat** → **System Prompt**
-3. Add custom instructions
-
-**Example system prompts:**
-
-```
-You are a senior TypeScript developer. Always use strict types,
-avoid 'any', and follow functional programming patterns where
-appropriate.
-```
-
-```
-When reviewing code, always check for:
-1. Security vulnerabilities
-2. Performance issues
-3. Accessibility concerns
-4. Test coverage
-```
-
 ### Keyboard Navigation
 
 Navigate the interface entirely with keyboard:
@@ -374,7 +336,6 @@ Navigate the interface entirely with keyboard:
 | Focus chat input | `⌘ L` |
 | Focus file browser | `⌘ E` |
 | Navigate messages | `↑` / `↓` (in chat area) |
-| Copy last response | `⌘ ⇧ C` |
 | Previous/next chat | `⌘ [` / `⌘ ]` |
 
 ---
@@ -410,10 +371,10 @@ Don't expect perfection on the first try. Iterate:
 
 | Task | Recommended Model |
 |------|-------------------|
-| Complex architecture decisions | Claude 3.5 Sonnet |
-| Quick syntax questions | Claude 3.5 Haiku |
-| Broad general knowledge | GPT-4o |
-| Long document analysis | Gemini 1.5 Pro |
+| Complex architecture decisions | Claude 4.5 Sonnet |
+| Quick syntax questions | Claude 4.5 Haiku |
+| Broad general knowledge | GPT-5 Pro |
+| Long document analysis | Gemini 3.0 Pro |
 
 ---
 

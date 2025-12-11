@@ -33,17 +33,17 @@ Click the model selector in the toolbar to choose your AI model:
 
 | Model | When to Use |
 |-------|-------------|
-| **Claude 3.5 Sonnet** | Best for complex tasks, code review, debugging |
-| **Claude 3.5 Haiku** | Quick questions, simple explanations |
-| **GPT-4o** | General coding assistance |
-| **GPT-4o Mini** | Fast, cost-effective responses |
+| **Claude 4.5 Sonnet** | Best for complex tasks, code review, debugging |
+| **Claude 4.5 Haiku** | Quick questions, simple explanations |
+| **GPT-5 Pro** | General coding assistance |
+| **GPT-5.1 Mini** | Fast, cost-effective responses |
 
 !!! success "Recommended for Getting Started"
-    **Claude 3.5 Sonnet** offers the best balance of intelligence and speed for most coding tasks.
+    **Claude 4.5 Sonnet** offers the best balance of intelligence and speed for most coding tasks.
 
 ### 4. Start Chatting!
 
-Type your question in the input box at the bottom and press `⌘ Enter` (or `Ctrl Enter`) to send.
+Type your question in the input box at the bottom and press `Enter` to send.
 
 ---
 
@@ -127,26 +127,14 @@ app.post('/api/users', async (req, res) => {
 
 Fabric works best when it has context about your code.
 
-### Method 1: Drag and Drop
-
-Simply drag files from your file explorer into the chat input area.
-
-### Method 2: File Browser
+### Method 1: File Browser
 
 1. Click the **Files** icon in the sidebar (or press `⌘ E` / `Ctrl E`)
 2. Navigate to the file you want to include
 3. Click the **+** button next to the file name
 4. The file will be added to your current message context
 
-### Method 3: @ Mentions
-
-Type `@` followed by a filename to quickly add it:
-
-```
-@src/utils/helpers.ts
-
-What does the formatDate function do?
-```
+You can also paste images directly into the chat input area for image analysis.
 
 !!! tip "Token Awareness"
     Fabric shows you how many tokens your message uses. Keep an eye on this when adding large files—you may want to add only the relevant sections.
@@ -160,12 +148,11 @@ Learn these shortcuts to work faster:
 | Action | macOS | Windows/Linux |
 |--------|-------|---------------|
 | **New Chat** | `⌘ N` | `Ctrl N` |
-| **Send Message** | `⌘ Enter` | `Ctrl Enter` |
+| **Send Message** | `Enter` | `Enter` |
 | **Stop Generation** | `Escape` | `Escape` |
 | **Toggle Sidebar** | `⌘ B` | `Ctrl B` |
 | **Open Settings** | `⌘ ,` | `Ctrl ,` |
 | **Search Files** | `⌘ P` | `Ctrl P` |
-| **Toggle Agentic Mode** | `⌘ ⇧ A` | `Ctrl Shift A` |
 | **Show All Shortcuts** | `⌘ /` | `Ctrl /` |
 
 [:octicons-arrow-right-24: See all keyboard shortcuts](../reference/shortcuts.md)
@@ -204,7 +191,7 @@ Organize related chats into groups:
 
 For complex, multi-step tasks, enable Agentic Mode:
 
-1. Click the **Agent** toggle in the toolbar (or press `⌘ ⇧ A`)
+1. Click the **Agent** toggle in the toolbar
 2. Ask for a complex task:
 
 ```

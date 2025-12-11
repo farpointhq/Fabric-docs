@@ -117,25 +117,7 @@ Tests: 12 passed, 0 failed
 
 ### Quick Toggle
 
-=== "Keyboard"
-
-    Press `⌘ ⇧ A` (macOS) or `Ctrl Shift A` (Windows/Linux)
-
-=== "Mouse"
-
-    Click the **Agent** toggle in the toolbar
-
-=== "Per-Message"
-
-    Type `/agent` before your message
-
-### Persistent Setting
-
-To keep agentic mode enabled by default:
-
-1. Open **Settings** (`⌘ ,`)
-2. Go to **Agentic**
-3. Toggle **Enable by default**
+Click the **Agent** toggle in the toolbar to enable agentic mode for the current chat.
 
 ---
 
@@ -143,29 +125,17 @@ To keep agentic mode enabled by default:
 
 Configure what requires your approval:
 
-### Permission Levels
+### Permission Settings
 
-| Level | Description | Best For |
-|-------|-------------|----------|
-| **Strict** | Approve every action | Learning, sensitive projects |
-| **Balanced** | Approve writes and commands | Day-to-day development |
-| **Permissive** | Only approve destructive actions | Trusted tasks, iteration |
+For each chat, you can configure:
 
-### Configuring Permissions
+| Setting | Options | Default |
+|---------|---------|---------|
+| **Bash Commands** | Allow / Blocklist per chat | Blocklist |
+| **File Editing** | Enabled / Disabled per chat | Disabled |
+| **Screenshots** | Enabled / Disabled per chat | Disabled |
 
-1. Open **Settings** → **Permissions**
-2. Set individual tool permissions:
-
-| Tool | Options |
-|------|---------|
-| **File Read** | Always allow / Ask once / Always ask |
-| **File Write** | Always allow / Ask once / Always ask |
-| **File Delete** | Always ask (recommended) |
-| **Shell Commands** | Per-command / Pattern-based / Always ask |
-| **Web Requests** | Domain-based / Always ask |
-
-!!! warning "File Deletion"
-    File deletion always requires explicit approval, regardless of permission level.
+These settings are configured within individual chat sessions, allowing you to have fine-grained control over what the agentic agent can do in each conversation.
 
 ### Approval Dialog
 
@@ -304,10 +274,10 @@ Start with Phase 1.
 
 Fabric includes built-in protections:
 
-- **No infinite loops** - Tasks have a maximum step count
+- **No infinite loops** - Tasks have a maximum of 100 steps
 - **Rollback capability** - All changes can be reverted
-- **Sandboxing** - Commands run in isolated environments
-- **Rate limiting** - Prevents runaway API usage
+- **User approval** - Sensitive operations require explicit approval
+- **Structured planning** - AI creates a plan before execution
 
 ### Manual Controls
 
@@ -317,26 +287,6 @@ Fabric includes built-in protections:
 | **Cancel** | Stop the task immediately |
 | **Revert** | Undo all changes from the current task |
 | **Review** | See all changes before accepting |
-
-### Audit Trail
-
-Every agentic session is logged:
-
-```
-Session: 2024-01-15 14:32:00
-Task: "Refactor UserService to use dependency injection"
-
-Actions:
-  14:32:01 [READ] src/services/UserService.ts
-  14:32:03 [READ] src/services/UserService.test.ts
-  14:32:05 [WRITE] src/interfaces/IUserRepository.ts [APPROVED]
-  14:32:07 [WRITE] src/interfaces/IEmailService.ts [APPROVED]
-  14:32:10 [EDIT] src/services/UserService.ts [APPROVED]
-  14:32:15 [BASH] npm test [APPROVED]
-  14:32:45 [COMPLETE] All tests passed
-```
-
-View session history in **Settings** → **Agentic** → **Session History**.
 
 ---
 

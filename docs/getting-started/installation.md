@@ -195,7 +195,7 @@ Remove the AppImage file, or use `sudo dpkg -r fabric` for .deb installations.
 
 1. Close other resource-intensive applications
 2. Try reducing the context window size in Settings
-3. Switch to a faster model (e.g., Claude 3.5 Haiku)
+3. Switch to a faster model (e.g., Claude 4.5 Haiku)
 
 !!! question "Need More Help?"
     Visit our [GitHub Discussions](https://github.com/farpointhq/Fabric/discussions) for community support.

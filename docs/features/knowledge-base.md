@@ -1,120 +1,57 @@
 # Knowledge Base
 
-Give Fabric context about your projects.
+!!! warning "Coming Soon"
+    The Knowledge Base feature is currently in development and not yet available in the beta release.
 
-## What is the Knowledge Base?
+## Planned Features
 
-The knowledge base stores information about your projects that persists across conversations:
+The Knowledge Base will provide persistent context about your projects across conversations:
 
-- Project structure
-- Coding conventions
-- Common patterns
-- Documentation
+<div class="grid cards" markdown>
 
-## Adding Knowledge
+-   :material-file-document-multiple:{ .lg .middle } **Project Context**
 
-### From Files
+    ---
 
-Drag and drop files into the knowledge base:
+    Store information about your codebase structure, conventions, and patterns that persists across chat sessions.
 
-1. Open Knowledge Base (`⌘ K`)
-2. Drag files from your file system
-3. Files are indexed and searchable
+-   :material-magnify:{ .lg .middle } **Semantic Search**
 
-### From Conversations
+    ---
 
-Save useful information from chats:
+    Automatically retrieve relevant context when you ask questions about your project.
 
-1. Select text in a response
-2. Click "Add to Knowledge Base"
-3. Tag and categorize
+-   :material-tag-multiple:{ .lg .middle } **Organization**
 
-### Manual Entries
+    ---
 
-Add custom entries:
+    Tag and categorize knowledge entries for easy retrieval and management.
 
-```markdown
-# API Conventions
+-   :material-sync:{ .lg .middle } **Auto-Updates**
 
-- Use REST for public endpoints
-- Use GraphQL for internal services
-- Always version APIs: /v1/resource
-- Include request IDs in headers
-```
+    ---
 
-## Using Knowledge
+    Keep your knowledge base in sync with your evolving codebase.
 
-The AI automatically references relevant knowledge when:
+</div>
 
-- You mention project-specific terms
-- You ask about conventions
-- You work on related code
+## Current Alternatives
 
-### Explicit Reference
+While the Knowledge Base is in development, you can achieve similar results with:
 
-```
-Using our API conventions, create a new endpoint for...
-```
+### Project Descriptions
 
-### Automatic Retrieval
+Add context about your project in **Settings** → **General** → **Project Description**. This information is included in every conversation.
 
-The AI searches the knowledge base for relevant context automatically.
+### File Attachments
 
-## Organization
+Attach relevant files to your conversations using the file browser sidebar. Fabric will use these files as context for your questions.
 
-### Tags
+### Conversation History
 
-Organize entries with tags:
+Your chat history is preserved and searchable. Use the History panel in the sidebar to find and reopen previous conversations.
 
-- `#api`
-- `#frontend`
-- `#deployment`
-- `#testing`
+---
 
-### Categories
-
-Group related entries:
-
-- Conventions
-- Architecture
-- Troubleshooting
-- Onboarding
-
-## Best Practices
-
-### Keep It Updated
-
-Review and update knowledge regularly:
-
-- Remove outdated information
-- Add new conventions
-- Refine existing entries
-
-### Be Specific
-
-Good:
-```
-Database migrations run with: npm run db:migrate
-Test database: npm run db:migrate:test
-```
-
-Not as good:
-```
-We have database migrations
-```
-
-### Include Examples
-
-```markdown
-# Error Handling Pattern
-
-All API errors should return:
-
-{
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "Email is required",
-    "field": "email"
-  }
-}
-```
+!!! info "Want to be notified?"
+    Join our [beta program](https://farpointalpha.com/fabric) to get updates when new features like the Knowledge Base become available.

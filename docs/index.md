@@ -2,7 +2,7 @@
 
 <div class="hero" markdown>
 
-# :material-robot: Fabric
+# ![Fabric Logo](assets/logo.png){ .no-lightbox width="42" style="vertical-align: middle; margin-right: 8px;" } Fabric
 
 **The fastest way to code with AI, without giving up control**
 

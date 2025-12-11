@@ -121,7 +121,7 @@ Fabric builds a mental model of your project. It knows:
 
     ---
 
-    Bring your own API key from Anthropic, OpenAI, or Google—or use our free tier to get started immediately.
+    Add an API key from Anthropic, OpenAI, Google, or others. Free tiers available from Google, Mistral, and OpenRouter.
 
     [:octicons-arrow-right-24: Setup guide](getting-started/configuration.md)
 
@@ -135,8 +135,8 @@ Fabric builds a mental model of your project. It knows:
 
 </div>
 
-!!! tip "No API Key? No Problem"
-    Fabric includes free tokens to get you started. Try it out before committing to an API subscription.
+!!! tip "Free to Start"
+    Don't want to pay for API access yet? Use free-tier providers like Google, Mistral, or OpenRouter.
 
 ## What Will You Build Today?
 

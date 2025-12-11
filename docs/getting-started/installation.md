@@ -32,15 +32,14 @@
 
 </div>
 
-!!! success "Free to Try"
-    Fabric includes free tokens so you can start coding immediately—no API key required. Add your own keys later if you want more control.
+!!! success "Free to Start"
+    Use free-tier providers like Google, Mistral, or OpenRouter to get started without paying for API access.
 
 ## What You Need
 
 - **Internet connection** (AI models run in the cloud)
 - **4GB RAM** minimum, 8GB+ for large projects
-
-That's it. No API key required to get started—Fabric includes free tokens.
+- **API key** from any provider (free tiers available from Google, Mistral, OpenRouter)
 
 ---
 
@@ -101,8 +100,10 @@ Want more control over which models you use? Add your own keys in Settings:
 | **OpenAI** | [platform.openai.com](https://platform.openai.com/api-keys) |
 | **Google** | [aistudio.google.com](https://aistudio.google.com/app/apikey) |
 
-!!! tip "You Can Add Keys Anytime"
-    Start with the free tier. Add your own keys later when you want specific models or higher limits.
+!!! tip "Free Tier Options"
+    - **Google** — Generous free tier for Gemini models
+    - **Mistral** — Free API access to get started
+    - **OpenRouter** — Free models like DeepSeek R1
 
 ---
 

@@ -4,206 +4,198 @@
 
 # ![Fabric Logo](assets/logo.png){ .no-lightbox width="42" style="vertical-align: middle; margin-right: 8px;" } Fabric
 
-**The fastest way to code with AI, without giving up control**
+**Ship faster. Stay in control. Never fly blind.**
 
-Secure, context-aware code generation that always aligns with your standards.
+Stop choosing between speed and quality. Fabric gives you AI coding superpowers while keeping you in the driver's seat.
 
 [Join the Beta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
-[View Documentation](#what-is-fabric){ .md-button }
+[See What's Possible](#what-can-you-build){ .md-button }
 
 </div>
 
 ---
 
-## What is Fabric?
+## Why Developers Love Fabric
 
-Fabric is a powerful AI code assistant that helps you write, understand, and improve code. It combines the latest large language models with a sleek interface designed for developers who want AI assistance without sacrificing control.
+**You've tried AI coding tools.** They're fast—until they hallucinate. They're helpful—until they miss context. They're powerful—until you lose control of your codebase.
+
+Fabric is different. We built it for developers who want the **velocity of AI** without the **anxiety of not knowing what's happening** under the hood.
 
 <div class="grid cards" markdown>
 
--   :material-flash:{ .lg .middle } **Fast & Intelligent**
+-   :material-eye:{ .lg .middle } **See AI Think, Not Just Output**
 
     ---
 
-    Get instant code suggestions, explanations, and refactoring advice powered by state-of-the-art AI models like Claude 4.5, GPT-5, and Gemini 3.0.
+    Watch the AI reason through your problem in real-time. No more black boxes—understand *why* it suggests what it suggests, so you can trust (or correct) its decisions.
 
-    [:octicons-arrow-right-24: Learn about models](features/models.md)
+    [:octicons-arrow-right-24: How it works](features/agentic-mode.md)
 
--   :material-tab:{ .lg .middle } **Multi-Chat Workspace**
-
-    ---
-
-    Work on multiple features, bug fixes, and explorations simultaneously with tabbed conversations and chat groups.
-
-    [:octicons-arrow-right-24: Chat interface](guide/chat.md)
-
--   :material-tools:{ .lg .middle } **Tool Calling**
+-   :material-swap-horizontal:{ .lg .middle } **Choose the Right Model for the Job**
 
     ---
 
-    AI can execute code, search files, read documentation, and interact with your development environment—safely and with your approval.
+    Use fast models for quick tasks, powerful ones for complex reasoning. Switch mid-conversation. You're in control of the cost-quality tradeoff.
 
-    [:octicons-arrow-right-24: Available tools](features/tool-calling.md)
+    [:octicons-arrow-right-24: Model selection](features/models.md)
 
--   :material-brain:{ .lg .middle } **Agentic Mode**
+-   :material-tab:{ .lg .middle } **Work on Everything at Once**
 
     ---
 
-    Let AI autonomously plan and execute multi-step tasks like refactoring modules or creating new features—with full transparency and control.
+    Juggle bug fixes, feature development, and code exploration in parallel. Each conversation keeps its context—no more losing your train of thought.
 
-    [:octicons-arrow-right-24: Agentic workflows](features/agentic-mode.md)
+    [:octicons-arrow-right-24: Chat workspace](guide/chat.md)
+
+-   :material-shield-check:{ .lg .middle } **Your Code, Your Control**
+
+    ---
+
+    Every file change requires your approval. Full audit trail of AI actions. Your API keys, your data, your rules.
+
+    [:octicons-arrow-right-24: Security & privacy](getting-started/configuration.md)
 
 </div>
 
-## Key Features
+## What Can You Build?
 
-### Multi-Model Support
+### Ship Features in Hours, Not Days
 
-Switch between AI models based on your task. Each model has different strengths:
+Fabric doesn't just write code—it understands your codebase. Ask it to add a feature and it knows where things go, what patterns you use, and how to integrate properly.
 
-| Model | Best For | Speed | Context |
-|-------|----------|-------|---------|
-| **Claude Opus 4.5** | Complex reasoning, code review, architecture | Medium | 200K |
-| **Claude Sonnet 4.5** | Balanced performance, daily driver | Fast | 200K |
-| **Claude Haiku 4.5** | Quick tasks, simple questions | Very Fast | 200K |
-| **GPT-5 Pro** | Advanced reasoning, general assistance | Medium | 400K |
-| **GPT-5.1 Codex** | Code-specialized tasks | Fast | 400K |
-| **Gemini 3.0 Pro** | Long documents, multimodal tasks | Medium | 1M |
+!!! example "Real Developer Workflows"
+    - "Add JWT authentication to my Express API, following my existing middleware patterns"
+    - "Find all the places where we handle user permissions and add admin role support"
+    - "Refactor this class to use dependency injection—and update the tests"
 
-!!! tip "Switch Models Mid-Conversation"
-    You can switch models at any point in a conversation. Fabric maintains full context when you switch.
+### Pick the Perfect Model for Every Task
 
-### Agentic Workflows
+Why pay premium prices for a simple rename? Why use a fast model for complex architecture decisions? Fabric lets you choose:
 
-Enable agentic mode for complex, multi-step tasks:
+| When You Need... | Use | Why |
+|------------------|-----|-----|
+| Quick answers, simple fixes | Fast models | Instant response, minimal cost |
+| Complex reasoning | Powerful models | Better architecture, fewer mistakes |
+| Code review | Your choice | Match depth to importance |
+
+!!! tip "Optimize Cost Without Sacrificing Quality"
+    Switch models mid-conversation. Start with a fast model to explore, then switch to a powerful one when you need deep reasoning.
+
+### Let AI Handle the Boring Parts
+
+Some tasks are tedious but important: updating tests after a refactor, applying a fix across 50 files, migrating to a new API. Fabric's agentic mode handles multi-step tasks while keeping you in control:
 
 ```
-"Refactor the authentication module to use JWT tokens,
-update all related tests, and document the changes."
+"Update all API endpoints to use the new error handling pattern,
+and make sure the tests still pass."
 ```
 
-Fabric will:
+You'll see exactly what it plans to do, approve each step, and watch it work. No surprises, no mystery commits, no "what did it just do?"
 
-1. **Plan** the implementation steps
-2. **Execute** each step with your approval
-3. **Test** changes automatically
-4. **Document** what was changed
-5. **Present** results for your review
+[:octicons-arrow-right-24: See agentic mode in action](features/agentic-mode.md)
 
-[:octicons-arrow-right-24: Learn more about Agentic Mode](features/agentic-mode.md)
+### Your Codebase, Fully Understood
 
-### Context-Aware Assistance
+Fabric builds a mental model of your project. It knows:
 
-Fabric understands your project:
+- **Where things live** - Ask about auth code and it knows to look in `src/auth/`
+- **How you do things** - It learns your patterns, conventions, and style
+- **What connects to what** - Understands relationships between files and modules
 
-- **Auto File Select** - Automatically suggests relevant files based on your question
-- **Project Summaries** - AI-generated summaries of your codebase
-- **Database Awareness** - Connect databases to get schema-aware SQL assistance
-- **Terminal Integration** - Execute commands directly from the chat
+!!! success "No More Explaining Your Codebase"
+    You don't need to paste context into every prompt. Fabric remembers.
 
-### Privacy & Security
-
-Your code stays safe:
-
-- **Local Processing** - Files are processed locally, not sent to external servers
-- **API Key Control** - You manage your own API keys
-- **Approval Workflow** - Review and approve all file changes before they happen
-- **Audit Trail** - Full history of all AI actions
-
-## Getting Started
-
-!!! info "Beta Access"
-    Fabric is currently in private beta. [Join the waitlist](https://farpointalpha.com/fabric) to get access.
-
-Once you have access:
+## Get Started in 5 Minutes
 
 <div class="grid cards" markdown>
 
--   :material-download:{ .lg .middle } **1. Install**
+-   :material-download:{ .lg .middle } **1. Download**
 
     ---
 
-    Download Fabric for macOS, Windows, or Linux from your beta email.
+    Available for macOS, Windows, and Linux. One-click install, no dependencies.
 
-    [:octicons-arrow-right-24: Installation guide](getting-started/installation.md)
+    [:octicons-arrow-right-24: Download Fabric](getting-started/installation.md)
 
--   :material-key:{ .lg .middle } **2. Configure**
-
-    ---
-
-    Add your API key from Anthropic, OpenAI, or Google.
-
-    [:octicons-arrow-right-24: Configuration](getting-started/configuration.md)
-
--   :material-rocket-launch:{ .lg .middle } **3. Start Coding**
+-   :material-key:{ .lg .middle } **2. Connect Your AI**
 
     ---
 
-    Open a project and start chatting with AI about your code.
+    Bring your own API key from Anthropic, OpenAI, or Google—or use our free tier to get started immediately.
+
+    [:octicons-arrow-right-24: Setup guide](getting-started/configuration.md)
+
+-   :material-rocket-launch:{ .lg .middle } **3. Open a Project**
+
+    ---
+
+    Point Fabric at your codebase and start asking questions. It learns your code as you go.
 
     [:octicons-arrow-right-24: Quick start](getting-started/quickstart.md)
 
 </div>
 
-## Example Prompts
+!!! tip "No API Key? No Problem"
+    Fabric includes free tokens to get you started. Try it out before committing to an API subscription.
 
-Here are some things you can ask Fabric:
+## What Will You Build Today?
 
-=== "Code Review"
-
-    ```
-    Review this function for potential bugs,
-    performance issues, and best practices:
-
-    [paste your code]
-    ```
-
-=== "Debugging"
+=== "Fix That Bug"
 
     ```
-    I'm getting this error when running my tests:
-
-    [paste error]
-
-    The relevant code is in src/auth/login.ts
+    I'm getting "Cannot read property 'id' of undefined"
+    in UserProfile.tsx. Find the bug and fix it.
     ```
 
-=== "Feature Development"
+=== "Add a Feature"
 
     ```
-    Create a React component for a sortable data table
-    with pagination, following the patterns in our
-    existing components.
+    Add a dark mode toggle to the settings page.
+    Store the preference in localStorage and apply
+    it app-wide.
     ```
 
-=== "Refactoring"
+=== "Understand Legacy Code"
 
     ```
-    Refactor the UserService class to use dependency
-    injection. Update the tests accordingly.
+    Explain how the payment processing flow works.
+    I need to add a new payment method and don't
+    know where to start.
     ```
 
-## Getting Help
+=== "Review Before Shipping"
+
+    ```
+    Review this PR for security issues, edge cases
+    I might have missed, and potential performance
+    problems.
+    ```
+
+## Join the Community
 
 <div class="grid cards" markdown>
 
--   :material-book-open-variant:{ .lg .middle } **Documentation**
+-   :material-book-open-variant:{ .lg .middle } **Learn More**
 
     ---
 
-    You're here! Browse the sidebar for detailed guides.
+    Dive deeper into Fabric's features with our guides.
 
--   :material-github:{ .lg .middle } **GitHub**
+    [:octicons-arrow-right-24: Browse documentation](guide/overview.md)
 
-    ---
-
-    [Report issues](https://github.com/farpointhq/Fabric/issues) or [join discussions](https://github.com/farpointhq/Fabric/discussions)
-
--   :material-keyboard:{ .lg .middle } **Keyboard Shortcuts**
+-   :material-github:{ .lg .middle } **Get Involved**
 
     ---
 
-    Press `⌘ /` (or `Ctrl /`) in Fabric to see all shortcuts.
+    Share feedback, request features, and help shape Fabric's future.
+
+    [:octicons-arrow-right-24: GitHub Discussions](https://github.com/farpointhq/Fabric/discussions)
+
+-   :material-keyboard:{ .lg .middle } **Power User Tips**
+
+    ---
+
+    Master keyboard shortcuts to fly through your workflow.
 
     [:octicons-arrow-right-24: Shortcuts reference](reference/shortcuts.md)
 
@@ -213,8 +205,8 @@ Here are some things you can ask Fabric:
 
 <div class="footer-cta" markdown>
 
-Ready to accelerate your development?
+**Ready to code faster without the chaos?**
 
-[Join the Fabric Beta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Get Fabric Free](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
 
 </div>

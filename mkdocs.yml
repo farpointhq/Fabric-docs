@@ -114,6 +114,7 @@ nav:
     - Keyboard Shortcuts: reference/shortcuts.md
     - Settings: reference/settings.md
     - API: reference/api.md
+  - Roadmap: roadmap.md
   - Release Notes: releases.md
 
 extra:

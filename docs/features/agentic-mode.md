@@ -1,6 +1,13 @@
 # Agentic Mode
 
-Let AI autonomously plan and execute complex, multi-step tasks.
+**Hand off the tedious parts. Keep control of the important ones.**
+
+Some tasks are too big for a single question. Refactoring a module. Migrating to a new API. Updating tests across 50 files. Agentic mode lets you describe what you want, watch the AI plan it out, and approve each step as it goes.
+
+!!! tip "Think of It Like a Junior Developer"
+    You give the task, review the approach, and sign off on the work. The AI handles the grunt work while you stay in control.
+
+---
 
 ## What is Agentic Mode?
 

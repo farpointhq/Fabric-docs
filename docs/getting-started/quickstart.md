@@ -1,116 +1,76 @@
 # Quick Start
 
-Get productive with Fabric in 5 minutes.
+**From zero to coding with AI in under 5 minutes.**
 
-!!! info "Prerequisites"
-    Make sure you've [installed Fabric](installation.md) and added at least one API key.
+## Launch and Go
 
-## Your First Chat
+### Step 1: Open Fabric
 
-### 1. Launch Fabric
+Launch it like any other app. No terminal commands, no configuration files.
 
-Open Fabric from your Applications folder (macOS), Start Menu (Windows), or run the AppImage (Linux).
+### Step 2: Point It at Your Code
 
-### 2. Open a Project (Optional but Recommended)
+Click **File** → **Open Project** and select your project folder. Fabric starts learning your codebase immediately.
 
-For the best experience, open a project folder:
+!!! success "This Is Where the Magic Happens"
+    Once Fabric knows your project, it stops being a generic AI and becomes *your* AI:
 
-1. Click **File** → **Open Project** (or press `⌘ O` / `Ctrl O`)
-2. Select your project folder
-3. Fabric will index your files for context-aware assistance
+    - It knows where your auth code lives
+    - It follows your naming conventions
+    - It suggests files you probably need
+    - It understands how your components connect
 
-!!! tip "Why Open a Project?"
-    When you open a project, Fabric can:
+### Step 3: Pick Your Model
 
-    - Suggest relevant files automatically
-    - Understand your codebase structure
-    - Follow your existing coding patterns
-    - Search through your files when needed
+Click the model dropdown and choose based on what you're doing:
 
-### 3. Select a Model
+| Doing This? | Use This |
+|-------------|----------|
+| Quick question, simple fix | Fast model (Haiku, GPT Mini) |
+| Complex problem, code review | Smart model (Sonnet, GPT-4) |
+| Not sure? | Start fast, switch if needed |
 
-Click the model selector in the toolbar to choose your AI model:
+!!! tip "You Can Switch Anytime"
+    Start with a fast model. If the answer isn't deep enough, switch to a smarter one. Fabric keeps all your context.
 
-| Model | When to Use |
-|-------|-------------|
-| **Claude 4.5 Sonnet** | Best for complex tasks, code review, debugging |
-| **Claude 4.5 Haiku** | Quick questions, simple explanations |
-| **GPT-5 Pro** | General coding assistance |
-| **GPT-5.1 Mini** | Fast, cost-effective responses |
+### Step 4: Ask Anything
 
-!!! success "Recommended for Getting Started"
-    **Claude 4.5 Sonnet** offers the best balance of intelligence and speed for most coding tasks.
-
-### 4. Start Chatting!
-
-Type your question in the input box at the bottom and press `Enter` to send.
+Type a question and hit Enter. That's it. No special syntax, no magic commands.
 
 ---
 
-## Example Prompts to Try
+## Try These Right Now
 
-### Explain Code
+### "Why isn't this working?"
 
-Paste code and ask for an explanation:
-
-```
-Explain what this code does and suggest any improvements:
-
-function debounce(fn, delay) {
-  let timeoutId;
-  return (...args) => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn(...args), delay);
-  };
-}
-```
-
-**What you'll get:** A clear explanation of the debounce pattern, when to use it, and potential improvements like adding TypeScript types or a cancel method.
-
-### Generate Code
-
-Describe what you need:
+Paste broken code and watch Fabric figure it out:
 
 ```
-Write a React hook called useLocalStorage that:
-- Syncs state with localStorage
-- Handles JSON serialization automatically
-- Works with TypeScript generics
-- Handles SSR (no window on server)
-```
-
-**What you'll get:** A complete, production-ready hook with TypeScript types and proper error handling.
-
-### Debug an Error
-
-Paste your error message:
-
-```
-I'm getting this error:
+This keeps crashing and I don't know why:
 
 TypeError: Cannot read properties of undefined (reading 'map')
   at UserList (UserList.tsx:15:23)
-
-Here's my component:
-
-function UserList({ users }) {
-  return (
-    <ul>
-      {users.map(user => <li key={user.id}>{user.name}</li>)}
-    </ul>
-  );
-}
 ```
 
-**What you'll get:** Identification of the issue (users is undefined on initial render) and multiple solutions (optional chaining, default value, loading state).
+**Fabric will:** Find the bug, explain why it happens, and give you multiple ways to fix it.
 
-### Code Review
+### "Build this for me"
 
-Ask for a thorough review:
+Describe what you need in plain English:
 
 ```
-Review this API handler for security issues, error handling,
-and best practices:
+Create a React hook that saves state to localStorage.
+It should handle JSON automatically and work with TypeScript.
+```
+
+**Fabric will:** Write production-ready code that matches your project's patterns.
+
+### "Is this code any good?"
+
+Get a second opinion before you ship:
+
+```
+Review this for security issues and things I might have missed:
 
 app.post('/api/users', async (req, res) => {
   const { email, password } = req.body;
@@ -119,172 +79,128 @@ app.post('/api/users', async (req, res) => {
 });
 ```
 
-**What you'll get:** Identification of issues like missing input validation, password hashing, error handling, and suggestions for improvement.
+**Fabric will:** Catch the missing input validation, unencrypted password, and lack of error handling.
 
 ---
 
-## Adding Files to Context
+## Give Fabric More Context
 
-Fabric works best when it has context about your code.
+The more Fabric knows, the better it helps.
 
-### Method 1: File Browser
+### Add Files to Your Question
 
-1. Click the **Files** icon in the sidebar (or press `⌘ E` / `Ctrl E`)
-2. Navigate to the file you want to include
-3. Click the **+** button next to the file name
-4. The file will be added to your current message context
+Click **Files** in the sidebar, find what you need, and click **+**. Fabric will read that file when answering.
 
-You can also paste images directly into the chat input area for image analysis.
-
-!!! tip "Token Awareness"
-    Fabric shows you how many tokens your message uses. Keep an eye on this when adding large files—you may want to add only the relevant sections.
+!!! tip "Fabric Often Finds Files Automatically"
+    Ask "where do we handle authentication?" and Fabric will search your codebase and pull in the relevant files itself. You don't always need to add them manually.
 
 ---
 
-## Essential Keyboard Shortcuts
+## Shortcuts Worth Learning
 
-Learn these shortcuts to work faster:
+| Want to... | Press |
+|------------|-------|
+| Start fresh | `⌘ N` / `Ctrl N` |
+| Stop the AI mid-response | `Escape` |
+| Find a file | `⌘ P` / `Ctrl P` |
+| See all shortcuts | `⌘ /` / `Ctrl /` |
 
-| Action | macOS | Windows/Linux |
-|--------|-------|---------------|
-| **New Chat** | `⌘ N` | `Ctrl N` |
-| **Send Message** | `Enter` | `Enter` |
-| **Stop Generation** | `Escape` | `Escape` |
-| **Toggle Sidebar** | `⌘ B` | `Ctrl B` |
-| **Open Settings** | `⌘ ,` | `Ctrl ,` |
-| **Search Files** | `⌘ P` | `Ctrl P` |
-| **Show All Shortcuts** | `⌘ /` | `Ctrl /` |
-
-[:octicons-arrow-right-24: See all keyboard shortcuts](../reference/shortcuts.md)
+[:octicons-arrow-right-24: Full shortcut reference](../reference/shortcuts.md)
 
 ---
 
-## Using Multiple Chats
+## Work on Multiple Things at Once
 
-Fabric supports multiple concurrent conversations:
+Real work isn't linear. You're fixing a bug, get asked about something else, then need to check on that feature from yesterday.
 
-### Tabs
+### Use Tabs
 
-- **New Tab:** Click the **+** button in the tab bar or press `⌘ T`
-- **Switch Tabs:** Click on a tab or use `⌘ 1-9` to jump to specific tabs
-- **Close Tab:** Click the **×** on a tab or press `⌘ W`
+Hit `⌘ T` for a new conversation. Each tab keeps its own context. Jump between them without losing your place.
 
-### Chat Groups
+### Group Related Chats
 
-Organize related chats into groups:
+Right-click a tab → **Add to Group** → **New Group**
 
-1. Right-click on a tab
-2. Select **Add to Group** → **New Group**
-3. Name your group (e.g., "Auth Feature", "Bug Fixes")
-4. Drag other tabs into the group
-
-!!! example "Workflow Example"
-    Working on a new feature? Create a group with:
-
-    - One chat for implementation questions
-    - One chat for writing tests
-    - One chat for documentation
+Name it "Auth Rewrite" or "Sprint 42 Bugs" and drag related tabs in. Stay organized without trying.
 
 ---
 
-## Enabling Agentic Mode
+## Let Fabric Do the Heavy Lifting
 
-For complex, multi-step tasks, enable Agentic Mode:
-
-1. Click the **Agent** toggle in the toolbar
-2. Ask for a complex task:
+Some tasks are too big for a single question-and-answer. Turn on **Agentic Mode** and let Fabric plan and execute multi-step tasks.
 
 ```
-Refactor the UserService class to use dependency injection.
-Update all the tests and add JSDoc comments.
+Refactor UserService to use dependency injection,
+update all the tests, and make sure everything still passes.
 ```
 
-3. Review the AI's plan before it executes
-4. Approve or modify each step
+Fabric will:
 
-!!! warning "Review Before Approving"
-    Agentic mode can create, modify, and delete files. Always review the AI's plan and approve each action carefully.
+1. **Show you the plan** before doing anything
+2. **Execute each step** with your approval
+3. **Verify the results** actually work
 
-[:octicons-arrow-right-24: Learn more about Agentic Mode](../features/agentic-mode.md)
+!!! warning "You Stay in Control"
+    Every file change requires your OK. No surprise commits, no mystery modifications.
+
+[:octicons-arrow-right-24: Deep dive into Agentic Mode](../features/agentic-mode.md)
 
 ---
 
-## Tips for Better Results
+## Get Better Results
 
-### Be Specific
+### Be Specific About the Problem
 
-Instead of:
-```
-Fix my code
-```
+❌ `Fix my code`
 
-Try:
-```
-The login function is returning undefined instead of the user object.
-Here's the function and the test that's failing.
-```
+✅ `The login function returns undefined instead of the user object. Here's the function and the failing test.`
 
-### Provide Context
+### Reference Your Codebase
 
-Instead of:
-```
-Write a button component
-```
+❌ `Write a button component`
 
-Try:
-```
-Write a Button component that matches the style of our existing
-components in src/components/. It should support variants (primary,
-secondary, danger) and sizes (sm, md, lg).
-```
+✅ `Write a Button component matching the style in src/components/. Support primary/secondary/danger variants.`
 
-### Iterate
+### Iterate, Don't Start Over
 
-If the first response isn't quite right, provide feedback:
+The AI remembers the conversation. Build on what it gave you:
 
 ```
-Good start! Can you also:
-- Add error handling for the API call
-- Include loading state
-- Make the retry button optional
+Good start! Now also add:
+- Error handling for the API call
+- A loading spinner
 ```
 
 ---
 
-## Next Steps
+## What's Next?
+
+You're ready to use Fabric. Here's where to go deeper:
 
 <div class="grid cards" markdown>
 
--   :material-chat:{ .lg .middle } **Chat Interface**
+-   :material-swap-horizontal:{ .lg .middle } **Master Model Selection**
 
     ---
 
-    Learn all the features of the chat interface
+    Learn when to use fast models vs. powerful ones
 
-    [:octicons-arrow-right-24: Chat guide](../guide/chat.md)
+    [:octicons-arrow-right-24: Model guide](../features/models.md)
 
--   :material-swap-horizontal:{ .lg .middle } **Model Selection**
-
-    ---
-
-    Choose the right model for each task
-
-    [:octicons-arrow-right-24: Models guide](../guide/models.md)
-
--   :material-robot:{ .lg .middle } **Agentic Mode**
+-   :material-brain:{ .lg .middle } **Unlock Agentic Mode**
 
     ---
 
-    Let AI handle complex multi-step tasks
+    Let Fabric handle complex multi-step tasks
 
     [:octicons-arrow-right-24: Agentic guide](../features/agentic-mode.md)
 
--   :material-cog:{ .lg .middle } **Configuration**
+-   :material-tools:{ .lg .middle } **Explore Tool Calling**
 
     ---
 
-    Customize Fabric to your workflow
+    See what Fabric can do beyond just chatting
 
-    [:octicons-arrow-right-24: Configuration](configuration.md)
+    [:octicons-arrow-right-24: Tools reference](../features/tool-calling.md)
 
 </div>

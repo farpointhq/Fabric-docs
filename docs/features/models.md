@@ -1,6 +1,13 @@
 # AI Models
 
-Fabric supports a comprehensive range of AI models from multiple providers, organized into intelligent tiers for optimal performance.
+**Use the right tool for each job—fast models for quick tasks, smart ones for hard problems.**
+
+Most AI tools lock you into one model. Fabric lets you choose. Running a quick lint check? Use a fast, cheap model. Debugging a gnarly race condition? Switch to something powerful. You control the cost-quality tradeoff.
+
+!!! success "No More Overpaying"
+    Stop using expensive models for simple tasks. Fabric's model selector puts you in control of your AI costs.
+
+---
 
 ## Model Tier System
 

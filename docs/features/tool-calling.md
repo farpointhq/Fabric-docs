@@ -1,6 +1,13 @@
 # Tool Calling
 
-Understand how Fabric's AI uses tools to interact with your development environment.
+**AI that can actually do things, not just talk about them.**
+
+Most AI chatbots give you text. Fabric's AI can read your files, run your tests, search your codebase, and make changes—all while keeping you in control. You approve what matters, and the rest happens automatically.
+
+!!! success "From Suggestion to Solution"
+    Instead of copying code suggestions and hoping they work, watch the AI actually implement and test its ideas in your environment.
+
+---
 
 ## What is Tool Calling?
 

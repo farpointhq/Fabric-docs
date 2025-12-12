@@ -110,6 +110,8 @@ nav:
     - AI Models: features/models.md
     - Agentic Mode: features/agentic-mode.md
     - Tool Calling: features/tool-calling.md
+  - Architecture:
+    - Orchestration: architecture/orchestration.md
   - Reference:
     - Keyboard Shortcuts: reference/shortcuts.md
     - Settings: reference/settings.md

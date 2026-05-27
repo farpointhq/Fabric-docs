@@ -3,13 +3,13 @@ site_description: Official documentation for Fabric - AI-powered code assistant
 site_url: https://docs.fabric.dev/
 repo_url: https://github.com/farpointhq/Fabric-docs
 repo_name: farpointhq/Fabric-docs
+docs_dir: docs
 
 theme:
   name: material
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
-    # Dark mode (default - matches Fabric app)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
@@ -17,7 +17,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
@@ -93,30 +92,6 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
-nav:
-  - Home: index.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quickstart.md
-    - Configuration: getting-started/configuration.md
-  - User Guide:
-    - Overview: guide/overview.md
-    - Chat Interface: guide/chat.md
-    - Model Selection: guide/models.md
-    - Code Generation: guide/code-generation.md
-    - Projects: guide/projects.md
-  - Features:
-    - Deep Codebase Understanding: features/knowledge-base.md
-    - AI Models: features/models.md
-    - Agentic Mode: features/agentic-mode.md
-    - Tool Calling: features/tool-calling.md
-  - Reference:
-    - Keyboard Shortcuts: reference/shortcuts.md
-    - Settings: reference/settings.md
-    - API: reference/api.md
-  - Roadmap: roadmap.md
-  - Release Notes: releases.md
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -134,3 +109,47 @@ copyright: Copyright &copy; 2025 Farpoint HQ
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Getting Started:
+      - What Is Fabric?: index.md
+      - Onboarding: getting-started/onboarding/onboarding.md
+      - Quickstart: getting-started/quickstart/quickstart.md
+      - Models: getting-started/models/models.md
+      - Explore use cases: getting-started/explore-use-cases/explore-use-cases.md
+      - Migrate: getting-started/migrate/migrate.md
+  - Using Fabric:
+      - App:
+          - Overview: using-fabric/app/overview/overview.md
+          - Basic Functionality: using-fabric/app/basic-functionality/basic-functionality.md
+          - Settings: using-fabric/app/settings/settings.md
+          - Code Review: using-fabric/app/code-review/code-review.md
+          - Databases: using-fabric/app/databases/databases.md
+          - Tab Grouping: using-fabric/app/tab-grouping/tab-grouping.md
+          - In-app browser: using-fabric/app/in-app-browser/in-app-browser.md
+          - Agentic Browser Usage: using-fabric/app/agentic-browser-usage/agentic-browser-usage.md
+          # - Computer Use: using-fabric/app/computer-use/computer-use.md
+          - Slash Commands: using-fabric/app/slash-commands/slash-commands.md
+          - Built-in Terminal: using-fabric/app/built-in-terminal/built-in-terminal.md
+          - Sub-Agents: using-fabric/app/sub-agents/sub-agents.md
+          - Directed Acyclic Graph (DAG): using-fabric/app/directed-acyclic-graph/directed-acyclic-graph.md
+          - Worktrees: using-fabric/app/worktrees/worktrees.md
+      - Core AI Workflows:
+          - Code Planning: using-fabric/core-ai-workflows/code-planning/code-planning.md
+          - Fix Command: using-fabric/core-ai-workflows/fix-command/fix-command.md
+          - Context Window Tracking: using-fabric/core-ai-workflows/context-window-tracking/context-window-tracking.md
+          - Chat Compaction: using-fabric/core-ai-workflows/chat-compaction/chat-compaction.md
+  - Customize Fabric:
+      - Permissions: customize-fabric/permissions/permissions.md
+      - Persistent Memory: customize-fabric/persistent-memory/persistent-memory.md
+      - MCP: customize-fabric/mcp/mcp.md
+      - Skills: customize-fabric/skills/skills.md
+      - Skills Marketplace: customize-fabric/skills-marketplace/skills-marketplace.md
+  - Learn:
+      - Best practices: learn/best-practices/best-practices.md
+      - Shortcuts: learn/shortcuts/shortcuts.md
+      - Cookbooks:
+          - Build an Agent Improvement Loop with Traces, Evals, and Fabric: learn/cookbooks/build-agent-improvement-loop-traces-evals-fabric/build-agent-improvement-loop-traces-evals-fabric.md
+          - Build iterative repair loops with Fabric: learn/cookbooks/build-iterative-repair-loops-fabric/build-iterative-repair-loops-fabric.md
+  - Releases:
+      - Changelog: releases/changelog/changelog.md

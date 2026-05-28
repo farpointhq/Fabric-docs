@@ -105,6 +105,39 @@ Fabric builds a mental model of your project. It knows:
 !!! success "No More Explaining Your Codebase"
     You don't need to paste context into every prompt. Fabric remembers.
 
+## Beyond Code
+
+Fabric isn't only for writing software. Because it combines a capable AI with a browser, a file system, and persistent context, it's just as useful for the thinking and research that surrounds the work.
+
+### Research Without Leaving Your Flow
+
+The built-in browser lets Fabric read any page you're looking at and bring it directly into the conversation. Ask it to summarize a lengthy RFC, compare two libraries side by side, or pull the relevant section from a Stack Overflow thread — without copy-pasting anything.
+
+!!! example "Research Workflows"
+    - "Read this Stripe docs page and show me the minimum setup I need for one-time payments"
+    - "Compare these two npm packages and tell me which is better maintained"
+    - "Summarize the key breaking changes in this migration guide"
+
+### Write Technical Docs That Actually Reflect the Code
+
+Point Fabric at a module and ask it to write the README, the API reference, or the changelog entry. Because it reads the real code, it doesn't invent things — it describes what's actually there.
+
+!!! example "Writing Workflows"
+    - "Write a README for this repo based on what the code actually does"
+    - "Generate a changelog entry from the commits since the last release"
+    - "Write a runbook for deploying this service, based on the scripts in /deploy"
+
+### Think Through Problems Before You Write a Line
+
+Use Fabric as a thinking partner for architecture decisions, product tradeoffs, or incident post-mortems. Attach the relevant files and have a real conversation about the problem before committing to a direction.
+
+!!! example "Planning Workflows"
+    - "I need to add real-time notifications to this app. Walk me through the tradeoffs of WebSockets vs SSE given what we already have"
+    - "We had an outage last night. Here's the log. Help me write a post-mortem"
+    - "I have to onboard a new engineer to this codebase next week. Help me write a walkthrough doc"
+
+---
+
 ## Get Started in 5 Minutes
 
 <div class="grid cards" markdown>

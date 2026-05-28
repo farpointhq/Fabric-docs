@@ -120,8 +120,7 @@ nav:
       - Migrate: getting-started/migrate/migrate.md
   - Using Fabric:
       - App:
-          - Overview: using-fabric/app/overview/overview.md
-          - Basic Functionality: using-fabric/app/basic-functionality/basic-functionality.md
+          - Basics: using-fabric/app/basics/basic-functionality.md
           - Settings: using-fabric/app/settings/settings.md
           - Code Review: using-fabric/app/code-review/code-review.md
           - Databases: using-fabric/app/databases/databases.md
@@ -149,7 +148,8 @@ nav:
       - Best practices: learn/best-practices/best-practices.md
       - Shortcuts: learn/shortcuts/shortcuts.md
       - Cookbooks:
-          - Build an Agent Improvement Loop with Traces, Evals, and Fabric: learn/cookbooks/build-agent-improvement-loop-traces-evals-fabric/build-agent-improvement-loop-traces-evals-fabric.md
-          - Build iterative repair loops with Fabric: learn/cookbooks/build-iterative-repair-loops-fabric/build-iterative-repair-loops-fabric.md
+          - Set Up AGENTS.md for Your Project: learn/cookbooks/set-up-agents-md/set-up-agents-md.md
+          - Run a Code Review Workflow: learn/cookbooks/ai-code-review-workflow/ai-code-review-workflow.md
+          - Research and Summarize with Fabric: learn/cookbooks/research-and-summarize-with-fabric/research-and-summarize-with-fabric.md
   - Releases:
       - Changelog: releases/changelog/changelog.md

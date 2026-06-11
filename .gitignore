@@ -19,3 +19,13 @@ Thumbs.db
 
 # Cache
 .cache/
+.fabric/
+node_modules/
+build/
+dist/
+out/
+cache/
+tmp/
+tmp.benchmarks/
+*.map
+*.log

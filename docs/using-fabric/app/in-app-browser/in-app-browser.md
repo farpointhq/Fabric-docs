@@ -1,6 +1,9 @@
 # In-App Browser in Fabric
 
-🚧 Video tutorial is in progress.
+<video controls playsinline width="100%">
+  <source src="../../../../assets/videos/in-app-browser.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## What is In-App Browser in Fabric?
 

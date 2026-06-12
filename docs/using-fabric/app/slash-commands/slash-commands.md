@@ -1,6 +1,9 @@
 # Slash Commands
 
-🚧 Video tutorial is in progress.
+<video controls playsinline width="100%">
+  <source src="../../../../assets/videos/slash-commands.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## What is Slash Commands in Fabric?
 

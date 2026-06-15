@@ -26,8 +26,10 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
   features:
-    - navigation.instant
-    - navigation.instant.progress
+    # navigation.instant is intentionally disabled: Material's instant (SPA)
+    # navigation is incompatible with the mkdocs-static-i18n language switcher
+    # (clicking a language would not actually switch). Full page loads are
+    # required for the EN/JA/FR switcher to work.
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky

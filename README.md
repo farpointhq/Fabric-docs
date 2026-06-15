@@ -21,7 +21,7 @@ git clone https://github.com/farpointhq/Fabric-docs.git
 cd Fabric-docs
 
 # Install dependencies
-pip install mkdocs-material mkdocs-glightbox
+pip install mkdocs-material mkdocs-glightbox mkdocs-static-i18n
 
 # Start local server
 mkdocs serve

@@ -1,6 +1,9 @@
 # Tab Grouping in Fabric
 
-🚧 Video tutorial is in progress.
+<video controls playsinline width="100%">
+  <source src="../../../../assets/videos/tab-grouping.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## What is Tab Grouping in Fabric?
 

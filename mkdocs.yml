@@ -1,6 +1,6 @@
 site_name: Fabric Documentation
 site_description: Official documentation for Fabric - AI-powered code assistant
-site_url: https://docs.fabric.dev/
+site_url: https://farpointhq.github.io/Fabric-docs/
 repo_url: https://github.com/farpointhq/Fabric-docs
 repo_name: farpointhq/Fabric-docs
 docs_dir: docs

@@ -46,7 +46,113 @@ theme:
 
 plugins:
   - search:
+      lang:
+        - en
+        - ja
+        - fr
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+          site_name: Fabric ドキュメント
+          nav_translations:
+            Getting Started: はじめに
+            What Is Fabric?: Fabric とは？
+            Onboarding: オンボーディング
+            Quickstart: クイックスタート
+            Models: モデル
+            Explore use cases: ユースケースを見る
+            Migrate: 移行
+            Using Fabric: Fabric を使う
+            App: アプリ
+            Basics: 基本
+            Settings: 設定
+            Code Review: コードレビュー
+            Databases: データベース
+            Tab Grouping: タブのグループ化
+            In-app browser: アプリ内ブラウザ
+            Agentic Browser Usage: エージェントによるブラウザ操作
+            Slash Commands: スラッシュコマンド
+            Built-in Terminal: 組み込みターミナル
+            Sub-Agents: サブエージェント
+            Directed Acyclic Graph (DAG): 有向非巡回グラフ (DAG)
+            Worktrees: ワークツリー
+            Core AI Workflows: 主要な AI ワークフロー
+            Code Planning: コードプランニング
+            Fix Command: Fix コマンド
+            Context Window Tracking: コンテキストウィンドウの追跡
+            Chat Compaction: チャットの圧縮
+            Customize Fabric: Fabric をカスタマイズ
+            Permissions: 権限
+            Persistent Memory: 永続メモリ
+            MCP: MCP
+            Skills: スキル
+            Skills Marketplace: スキルマーケットプレイス
+            Learn: 学ぶ
+            Best practices: ベストプラクティス
+            Shortcuts: ショートカット
+            Cookbooks: クックブック
+            Set Up AGENTS.md for Your Project: プロジェクトに AGENTS.md を設定する
+            Run a Code Review Workflow: コードレビューのワークフローを実行する
+            Research and Summarize with Fabric: Fabric で調査と要約を行う
+            Releases: リリース
+            Changelog: 変更履歴
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Documentation Fabric
+          nav_translations:
+            Getting Started: Prise en main
+            What Is Fabric?: Qu'est-ce que Fabric ?
+            Onboarding: Intégration
+            Quickstart: Démarrage rapide
+            Models: Modèles
+            Explore use cases: Explorer les cas d'usage
+            Migrate: Migrer
+            Using Fabric: Utiliser Fabric
+            App: Application
+            Basics: Notions de base
+            Settings: Paramètres
+            Code Review: Revue de code
+            Databases: Bases de données
+            Tab Grouping: Regroupement d'onglets
+            In-app browser: Navigateur intégré
+            Agentic Browser Usage: Utilisation du navigateur par l'agent
+            Slash Commands: Commandes slash
+            Built-in Terminal: Terminal intégré
+            Sub-Agents: Sous-agents
+            Directed Acyclic Graph (DAG): Graphe orienté acyclique (DAG)
+            Worktrees: Arbres de travail (worktrees)
+            Core AI Workflows: Flux de travail IA essentiels
+            Code Planning: Planification du code
+            Fix Command: Commande Fix
+            Context Window Tracking: Suivi de la fenêtre de contexte
+            Chat Compaction: Compactage de la conversation
+            Customize Fabric: Personnaliser Fabric
+            Permissions: Autorisations
+            Persistent Memory: Mémoire persistante
+            MCP: MCP
+            Skills: Compétences
+            Skills Marketplace: Place de marché des compétences
+            Learn: Apprendre
+            Best practices: Bonnes pratiques
+            Shortcuts: Raccourcis
+            Cookbooks: Recettes
+            Set Up AGENTS.md for Your Project: Configurer AGENTS.md pour votre projet
+            Run a Code Review Workflow: Exécuter un flux de revue de code
+            Research and Summarize with Fabric: Rechercher et résumer avec Fabric
+            Releases: Versions
+            Changelog: Journal des modifications
   - glightbox:
       touchNavigation: true
       loop: false

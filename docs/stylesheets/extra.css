@@ -172,3 +172,25 @@ th {
 .tabbed-set {
   margin: 1rem 0;
 }
+
+/* Language selector: show the active language label next to the icon */
+.md-select__button.md-icon {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  gap: 0.3rem;
+  padding: 0 0.3rem;
+}
+
+.md-select__current {
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Highlight the currently selected entry in the dropdown */
+.md-select__link--active {
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+}

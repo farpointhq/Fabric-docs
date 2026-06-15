@@ -1,0 +1,31 @@
+{#-
+  Override of Material's language selector.
+  Adds a visible label showing the currently selected language next to the
+  translate icon (Material's default shows only the icon).
+-#}
+<div class="md-header__option">
+  <div class="md-select">
+    {% set icon = config.theme.icon.alternate or "material/translate" %}
+    {% set ns = namespace(current="") %}
+    {% for alt in config.extra.alternate %}
+      {% if alt.lang == config.theme.language %}
+        {% set ns.current = alt.lang | upper %}
+      {% endif %}
+    {% endfor %}
+    <button class="md-header__button md-icon md-select__button" aria-label="{{ lang.t('select.language') }}">
+      {% include ".icons/" ~ icon ~ ".svg" %}
+      {% if ns.current %}<span class="md-select__current">{{ ns.current }}</span>{% endif %}
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        {% for alt in config.extra.alternate %}
+          <li class="md-select__item">
+            <a href="{{ alt.link | url }}" hreflang="{{ alt.lang }}" class="md-select__link{% if alt.lang == config.theme.language %} md-select__link--active{% endif %}">
+              {{ alt.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

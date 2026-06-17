@@ -1,6 +1,11 @@
 # Place de marché des compétences d'agent
 
-🚧 Le tutoriel vidéo est en cours de préparation.
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/skills-marketplace.mp4" type="video/mp4">
+  Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+</div>
 
 ## Qu'est-ce que la place de marché des compétences d'agent dans Fabric ?
 

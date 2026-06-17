@@ -105,6 +105,7 @@ plugins:
             Best practices: ベストプラクティス
             Shortcuts: ショートカット
             Cookbooks: クックブック
+            Search Your Conversation History: 会話履歴を検索する
             Set Up AGENTS.md for Your Project: プロジェクトに AGENTS.md を設定する
             Run a Code Review Workflow: コードレビューのワークフローを実行する
             Research and Summarize with Fabric: Fabric で調査と要約を行う
@@ -151,6 +152,7 @@ plugins:
             Best practices: Bonnes pratiques
             Shortcuts: Raccourcis
             Cookbooks: Recettes
+            Search Your Conversation History: Rechercher dans l'historique de vos conversations
             Set Up AGENTS.md for Your Project: Configurer AGENTS.md pour votre projet
             Run a Code Review Workflow: Exécuter un flux de revue de code
             Research and Summarize with Fabric: Rechercher et résumer avec Fabric
@@ -226,7 +228,7 @@ nav:
       - Quickstart: getting-started/quickstart/quickstart.md
       - Models: getting-started/models/models.md
       - Explore use cases: getting-started/explore-use-cases/explore-use-cases.md
-      - Migrate: getting-started/migrate/migrate.md
+      - Migrate: getting-started/migrate/search-your-history.md
   - Using Fabric:
       - App:
           - Basics: using-fabric/app/basics/basic-functionality.md

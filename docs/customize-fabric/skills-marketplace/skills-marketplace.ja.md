@@ -1,6 +1,11 @@
 # エージェントスキルマーケットプレイス
 
-🚧 ビデオチュートリアルは作成中です。
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/skills-marketplace.mp4" type="video/mp4">
+  お使いのブラウザは動画タグをサポートしていません。
+</video>
+</div>
 
 ## Fabric のエージェントスキルマーケットプレイスとは？
 

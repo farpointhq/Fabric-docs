@@ -95,6 +95,10 @@ plugins:
             Fix Command: Fix コマンド
             Context Window Tracking: コンテキストウィンドウの追跡
             Chat Compaction: チャットの圧縮
+            Code Diff: コード差分
+            Cost Tracking: コストの追跡
+            Message Queuing: メッセージのキューイング
+            Clarifying Questions: 確認のための質問
             Customize Fabric: Fabric をカスタマイズ
             Permissions: 権限
             Persistent Memory: 永続メモリ
@@ -109,6 +113,8 @@ plugins:
             Set Up AGENTS.md for Your Project: プロジェクトに AGENTS.md を設定する
             Run a Code Review Workflow: コードレビューのワークフローを実行する
             Research and Summarize with Fabric: Fabric で調査と要約を行う
+            Build an MCP Server with Fabric: Fabric で MCP サーバーを構築する
+            Generate Documents (Word, PowerPoint, PDF): ドキュメント生成（Word、PowerPoint、PDF）
             Releases: リリース
             Changelog: 変更履歴
         - locale: fr
@@ -142,6 +148,10 @@ plugins:
             Fix Command: Commande Fix
             Context Window Tracking: Suivi de la fenêtre de contexte
             Chat Compaction: Compactage de la conversation
+            Code Diff: Différences de code
+            Cost Tracking: Suivi des coûts
+            Message Queuing: Mise en file d'attente des messages
+            Clarifying Questions: Questions de clarification
             Customize Fabric: Personnaliser Fabric
             Permissions: Autorisations
             Persistent Memory: Mémoire persistante
@@ -156,6 +166,8 @@ plugins:
             Set Up AGENTS.md for Your Project: Configurer AGENTS.md pour votre projet
             Run a Code Review Workflow: Exécuter un flux de revue de code
             Research and Summarize with Fabric: Rechercher et résumer avec Fabric
+            Build an MCP Server with Fabric: Créer un serveur MCP avec Fabric
+            Generate Documents (Word, PowerPoint, PDF): Générer des documents (Word, PowerPoint, PDF)
             Releases: Versions
             Changelog: Journal des modifications
   - glightbox:
@@ -234,6 +246,7 @@ nav:
           - Basics: using-fabric/app/basics/basic-functionality.md
           - Settings: using-fabric/app/settings/settings.md
           - Code Review: using-fabric/app/code-review/code-review.md
+          - Code Diff: using-fabric/app/code-diff/code-diff.md
           - Databases: using-fabric/app/databases/databases.md
           - Tab Grouping: using-fabric/app/tab-grouping/tab-grouping.md
           - In-app browser: using-fabric/app/in-app-browser/in-app-browser.md
@@ -249,6 +262,9 @@ nav:
           - Fix Command: using-fabric/core-ai-workflows/fix-command/fix-command.md
           - Context Window Tracking: using-fabric/core-ai-workflows/context-window-tracking/context-window-tracking.md
           - Chat Compaction: using-fabric/core-ai-workflows/chat-compaction/chat-compaction.md
+          - Cost Tracking: using-fabric/core-ai-workflows/cost-tracking/cost-tracking.md
+          - Message Queuing: using-fabric/core-ai-workflows/message-queuing/message-queuing.md
+          - Clarifying Questions: using-fabric/core-ai-workflows/clarifying-questions/clarifying-questions.md
   - Customize Fabric:
       - Permissions: customize-fabric/permissions/permissions.md
       - Persistent Memory: customize-fabric/persistent-memory/persistent-memory.md
@@ -262,5 +278,7 @@ nav:
           - Set Up AGENTS.md for Your Project: learn/cookbooks/set-up-agents-md/set-up-agents-md.md
           - Run a Code Review Workflow: learn/cookbooks/ai-code-review-workflow/ai-code-review-workflow.md
           - Research and Summarize with Fabric: learn/cookbooks/research-and-summarize-with-fabric/research-and-summarize-with-fabric.md
+          - Build an MCP Server with Fabric: learn/cookbooks/build-an-mcp-server/build-an-mcp-server.md
+          - Generate Documents (Word, PowerPoint, PDF): learn/cookbooks/generate-documents/generate-documents.md
   - Releases:
       - Changelog: releases/changelog/changelog.md

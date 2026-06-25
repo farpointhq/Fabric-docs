@@ -6,7 +6,7 @@ Open the Settings panel by clicking the gear icon in the left sidebar. The panel
 
 ## General
 
-![General Settings](../../../../assets/screenshots/settings/1_general.png)
+![General Settings](../../../assets/screenshots/settings/1_general.png)
 
 **Project Description** — Enter a brief summary of your application to personalize AI assistance and improve prompt relevance.
 
@@ -24,7 +24,7 @@ Open the Settings panel by clicking the gear icon in the left sidebar. The panel
 
 ## Models
 
-![Models Settings](../../../../assets/screenshots/settings/2_models.png)
+![Models Settings](../../../assets/screenshots/settings/2_models.png)
 
 **Helper Model** — The lightweight LLM that analyzes your request, proposes relevant files to edit, and suggests concise tab names before the main model runs. Choose between Medium, Small, or other tiers.
 
@@ -45,7 +45,7 @@ Open the Settings panel by clicking the gear icon in the left sidebar. The panel
 
 ## Permissions
 
-![Permissions Settings](../../../../assets/screenshots/settings/3_permissions.png)
+![Permissions Settings](../../../assets/screenshots/settings/3_permissions.png)
 
 **Commands** — Whitelist safe terminal commands the AI is allowed to run without explicit approval. Default allowed commands include `ls`, `pwd`, `stat`, `file`, `du`, `df`, `cat`, `head`, `tail`, `grep`, and others. Use the "Add" button to add custom commands.
 
@@ -55,7 +55,7 @@ Open the Settings panel by clicking the gear icon in the left sidebar. The panel
 
 ## Skills
 
-![Skills Settings](../../../../assets/screenshots/settings/4_skills.png)
+![Skills Settings](../../../assets/screenshots/settings/4_skills.png)
 
 **Agent Skills** — Reusable instruction packs the agent loads on demand when a task matches. Skills can be:
 
@@ -69,7 +69,7 @@ Each skill can be toggled on or off individually. Use **Browse Marketplace** to 
 
 ## MCP
 
-![MCP Settings](../../../../assets/screenshots/settings/5_mcp.png)
+![MCP Settings](../../../assets/screenshots/settings/5_mcp.png)
 
 **MCP Servers** — Add and manage Model Context Protocol servers. Connected servers expose tools, resources, and prompts that the LLM can use. Each server shows its version, number of tools, and connection status. Use **Disconnect**, **Edit**, or **Remove** to manage existing servers, or **Add Server** to connect a new one.
 
@@ -85,7 +85,7 @@ Each skill can be toggled on or off individually. Use **Browse Marketplace** to 
 
 ## Terminal
 
-![Terminal Settings](../../../../assets/screenshots/settings/6_terminal.png)
+![Terminal Settings](../../../assets/screenshots/settings/6_terminal.png)
 
 **Default Profile** — The shell profile used when creating a new terminal with the "+" button. Click "Set Default" on any profile below to change it.
 
@@ -102,7 +102,7 @@ Each skill can be toggled on or off individually. Use **Browse Marketplace** to 
 
 ## Shortcuts
 
-![Shortcuts Settings](../../../../assets/screenshots/settings/7_shortcuts.png)
+![Shortcuts Settings](../../../assets/screenshots/settings/7_shortcuts.png)
 
 **Diff Viewer**
 
@@ -139,7 +139,7 @@ Each skill can be toggled on or off individually. Use **Browse Marketplace** to 
 
 ## Privacy
 
-![Privacy Settings](../../../../assets/screenshots/settings/8_privacy.png)
+![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
 
 **Usage Analytics**
 
@@ -160,7 +160,7 @@ Error reports are sent to the Fabric GitHub repository as issues and include the
 
 ## Benchmark
 
-![Benchmark Settings](../../../../assets/screenshots/settings/9_benchmark.png)
+![Benchmark Settings](../../../assets/screenshots/settings/9_benchmark.png)
 
 **Run Benchmark** — Evaluate model performance on standardized coding tasks. Select a benchmark from the dropdown and click **Run Benchmark** to start the evaluation.
 

@@ -1,5 +1,12 @@
 # 永続メモリ
 
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/persistent-memory.mp4" type="video/mp4">
+  お使いのブラウザは動画タグをサポートしていません。
+</video>
+</div>
+
 ## 永続メモリとは？
 
 永続メモリは、Fabric の AI にプロジェクトに関する恒久的な一連の指示を与える方法です。AI が常に把握しておくべき事柄を、会話のたびに説明しなくても伝えられます。

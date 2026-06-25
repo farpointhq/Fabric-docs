@@ -1,5 +1,12 @@
 # Persistent Memory
 
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../assets/videos/persistent-memory.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 ## What is Persistent Memory?
 
 Persistent Memory is how you give Fabric's AI a permanent set of instructions about your project — things it should always know, without you having to explain them in every conversation.

@@ -6,7 +6,7 @@ Ouvrez le panneau Paramètres en cliquant sur l'icône d'engrenage dans la barre
 
 ## General
 
-![General Settings](../../../../assets/screenshots/settings/1_general.png)
+![General Settings](../../../assets/screenshots/settings/1_general.png)
 
 **Project Description** — Saisissez un bref résumé de votre application pour personnaliser l'assistance de l'IA et améliorer la pertinence des prompts.
 
@@ -24,7 +24,7 @@ Ouvrez le panneau Paramètres en cliquant sur l'icône d'engrenage dans la barre
 
 ## Models
 
-![Models Settings](../../../../assets/screenshots/settings/2_models.png)
+![Models Settings](../../../assets/screenshots/settings/2_models.png)
 
 **Helper Model** — Le LLM léger qui analyse votre demande, propose les fichiers pertinents à modifier et suggère des noms d'onglets concis avant l'exécution du modèle principal. Choisissez entre Medium, Small ou d'autres niveaux.
 
@@ -45,7 +45,7 @@ Ouvrez le panneau Paramètres en cliquant sur l'icône d'engrenage dans la barre
 
 ## Autorisations
 
-![Permissions Settings](../../../../assets/screenshots/settings/3_permissions.png)
+![Permissions Settings](../../../assets/screenshots/settings/3_permissions.png)
 
 **Commands** — Ajoutez à la liste blanche les commandes de terminal sûres que l'IA est autorisée à exécuter sans approbation explicite. Les commandes autorisées par défaut incluent `ls`, `pwd`, `stat`, `file`, `du`, `df`, `cat`, `head`, `tail`, `grep`, et d'autres. Utilisez le bouton « Add » pour ajouter des commandes personnalisées.
 
@@ -55,7 +55,7 @@ Ouvrez le panneau Paramètres en cliquant sur l'icône d'engrenage dans la barre
 
 ## Compétences
 
-![Skills Settings](../../../../assets/screenshots/settings/4_skills.png)
+![Skills Settings](../../../assets/screenshots/settings/4_skills.png)
 
 **Agent Skills** — Des packs d'instructions réutilisables que l'agent charge à la demande lorsqu'une tâche correspond. Les compétences peuvent être :
 
@@ -69,7 +69,7 @@ Chaque compétence peut être activée ou désactivée individuellement. Utilise
 
 ## MCP
 
-![MCP Settings](../../../../assets/screenshots/settings/5_mcp.png)
+![MCP Settings](../../../assets/screenshots/settings/5_mcp.png)
 
 **MCP Servers** — Ajoutez et gérez des serveurs Model Context Protocol. Les serveurs connectés exposent des outils, des ressources et des prompts que le LLM peut utiliser. Chaque serveur affiche sa version, son nombre d'outils et son état de connexion. Utilisez **Disconnect**, **Edit** ou **Remove** pour gérer les serveurs existants, ou **Add Server** pour en connecter un nouveau.
 
@@ -85,7 +85,7 @@ Chaque compétence peut être activée ou désactivée individuellement. Utilise
 
 ## Terminal
 
-![Terminal Settings](../../../../assets/screenshots/settings/6_terminal.png)
+![Terminal Settings](../../../assets/screenshots/settings/6_terminal.png)
 
 **Default Profile** — Le profil de shell utilisé lors de la création d'un nouveau terminal avec le bouton « + ». Cliquez sur « Set Default » sur n'importe quel profil ci-dessous pour le modifier.
 
@@ -102,7 +102,7 @@ Chaque compétence peut être activée ou désactivée individuellement. Utilise
 
 ## Shortcuts
 
-![Shortcuts Settings](../../../../assets/screenshots/settings/7_shortcuts.png)
+![Shortcuts Settings](../../../assets/screenshots/settings/7_shortcuts.png)
 
 **Diff Viewer**
 
@@ -139,7 +139,7 @@ Chaque compétence peut être activée ou désactivée individuellement. Utilise
 
 ## Privacy
 
-![Privacy Settings](../../../../assets/screenshots/settings/8_privacy.png)
+![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
 
 **Usage Analytics**
 
@@ -160,7 +160,7 @@ Les rapports d'erreur sont envoyés au dépôt GitHub de Fabric sous forme d'iss
 
 ## Benchmark
 
-![Benchmark Settings](../../../../assets/screenshots/settings/9_benchmark.png)
+![Benchmark Settings](../../../assets/screenshots/settings/9_benchmark.png)
 
 **Run Benchmark** — Évaluez les performances d'un modèle sur des tâches de codage standardisées. Sélectionnez un benchmark dans le menu déroulant et cliquez sur **Run Benchmark** pour lancer l'évaluation.
 

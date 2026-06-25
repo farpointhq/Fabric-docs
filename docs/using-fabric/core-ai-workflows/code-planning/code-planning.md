@@ -1,6 +1,11 @@
 # Code Planning with Fabric
 
-🚧 Video tutorial is in progress.
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/code-planning.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 ## What is Code Planning with Fabric?
 
@@ -52,9 +57,23 @@ You can watch this process live in the chat — each tool call (file read, grep,
 
 ---
 
+## Build the Plan
+
+Once the plan is ready, you don't have to copy it anywhere or run a command by hand. Every generated plan comes with a **Build** button. Click it, and Fabric takes the plan and starts implementing it directly — setting up the work and turning each planned change into real code.
+
+This is the one-click path from blueprint to working code:
+
+1. **Review** the plan in the chat — expand sections, ask for changes, adjust the scope.
+2. When you're happy with it, click **Build**.
+3. Fabric implements the plan, working through the file-level changes in the order the plan laid out, so you can watch the design become code.
+
+Because Build works from the plan Fabric already researched, the implementation follows the architecture, sequence, and test strategy you reviewed — not a fresh guess.
+
+---
+
 ## After the Plan is Generated
 
-Once the plan is in the chat, you have several options:
+Besides clicking **Build**, once the plan is in the chat you have several options:
 
 * **Refine it conversationally** — Ask follow-up questions to expand any section, request alternative approaches, or adjust scope. Fabric will update the plan in place.
 * **Hand it off to `/implement`** — Save the plan to a markdown file and pass its URL to the `/implement` slash command to execute it in an isolated Git worktree.

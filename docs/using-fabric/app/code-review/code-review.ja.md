@@ -28,46 +28,46 @@ Fabric に組み込まれた**コードレビュー**機能を使うと、`/revi
 
 チャットツールバーのメインモデルセレクターをクリックして、コードレビューと編集のためのツール使用をサポートするモデルを選択します。
 
-![モデルセレクターを開く](../../../../assets/screenshots/code-review/1.png)
+![モデルセレクターを開く](../../../assets/screenshots/code-review/1.png)
 
 ### ステップ 2: Fabric XLarge を選択する
 
 コードレビューとファイル編集に必要な高度なツール使用機能を有効にするため、「Fabric XLarge」モデルを選択します。
 
-![Fabric XLarge を選択](../../../../assets/screenshots/code-review/2.png)
+![Fabric XLarge を選択](../../../assets/screenshots/code-review/2.png)
 
 ### ステップ 3: レビューコマンドを入力する
 
 `/review` スラッシュコマンドに続けて、分析したいファイルパスを入力します。引数のヒントには、PR 番号や説明を渡すこともできることが示されています。
 
-![レビューコマンドを入力](../../../../assets/screenshots/code-review/3.png)
+![レビューコマンドを入力](../../../assets/screenshots/code-review/3.png)
 
 ### ステップ 4: レビューリクエストを送信する
 
 Enter キーを押すか Send ボタンをクリックして、レビューリクエストを送信します。Fabric はファイルを読み込んで分析し、構造化されたレビューレポートのストリーミングを開始します。
 
-![レビューリクエストを送信](../../../../assets/screenshots/code-review/4.png)
+![レビューリクエストを送信](../../../assets/screenshots/code-review/4.png)
 
 ### ステップ 5: 分析レポートを確認する
 
 Fabric は、重大度（Critical、Major、Minor）ごとに整理された包括的なコードレビューレポートをストリーミングします。各指摘には、正確な場所、問題の説明、修正方法の具体的な提案が含まれます。
 
-![分析レポートを確認](../../../../assets/screenshots/code-review/5.png)
+![分析レポートを確認](../../../assets/screenshots/code-review/5.png)
 
 ### ステップ 6: 修正の適用を依頼する
 
 レビューを読んだ後、提案された修正を適用するよう Fabric に依頼します。AI は edit ツールを使用して、ファイルに正確で的を絞った変更を行います。
 
-![修正の適用を依頼](../../../../assets/screenshots/code-review/6.png)
+![修正の適用を依頼](../../../assets/screenshots/code-review/6.png)
 
 ### ステップ 7: 修正リクエストを送信する
 
 Enter キーを押すか Send をクリックして、修正の適用をトリガーします。Fabric は提案された変更を生成し、インタラクティブな差分ビューアーに表示します。
 
-![修正リクエストを送信](../../../../assets/screenshots/code-review/7.png)
+![修正リクエストを送信](../../../assets/screenshots/code-review/7.png)
 
 ### ステップ 8: インタラクティブな差分を確認する
 
 Fabric は、提案された変更を並列差分ビューアーに表示します。各ハンクは、左側に元のコード、右側に提案された変更を表示します。チェックマークボタンで変更を承認し、X ボタンで却下し、取り消しボタンで決定を元に戻せます。ファイル単位ですべての変更を承認または却下することもできます。
 
-![インタラクティブな差分を確認](../../../../assets/screenshots/code-review/8.png)
+![インタラクティブな差分を確認](../../../assets/screenshots/code-review/8.png)

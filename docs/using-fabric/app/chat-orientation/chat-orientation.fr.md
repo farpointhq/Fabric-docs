@@ -1,6 +1,11 @@
 # Orientation du chat
 
-🚧 Le tutoriel vidéo est en cours de préparation.
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../../assets/videos/chat-orientation.mp4" type="video/mp4">
+  Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+</div>
 
 Fabric vous permet d'organiser vos onglets de chat selon deux dispositions — une bande **horizontale** en haut (par défaut) ou une liste **verticale** sur le côté gauche. Les deux se comportent de façon identique ; seule la disposition change, vous pouvez donc choisir celle qui convient à votre écran et à votre façon de travailler.
 

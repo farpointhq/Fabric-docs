@@ -1,6 +1,11 @@
 # チャットの向き
 
-🚧 ビデオチュートリアルは作成中です。
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../../assets/videos/chat-orientation.mp4" type="video/mp4">
+  お使いのブラウザは動画タグをサポートしていません。
+</video>
+</div>
 
 Fabric では、チャットタブを 2 つのレイアウトのいずれかで配置できます。上部に沿った **横方向** のストリップ（デフォルト）か、左側に並ぶ **縦方向** のリストです。どちらも動作は同じで、変わるのは配置だけなので、画面や好みの作業スタイルに合う方を選べます。
 

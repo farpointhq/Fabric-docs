@@ -80,6 +80,7 @@ plugins:
             App: アプリ
             Basics: 基本
             Settings: 設定
+            Companion: コンパニオン
             Code Review: コードレビュー
             Code Reference: コードリファレンス
             Document Attachments: ドキュメントの添付
@@ -136,6 +137,7 @@ plugins:
             App: Application
             Basics: Notions de base
             Settings: Paramètres
+            Companion: Compagnon
             Code Review: Revue de code
             Code Reference: Référence de code
             Document Attachments: Pièces jointes de documents
@@ -264,6 +266,7 @@ nav:
           - Slash Commands: using-fabric/app/slash-commands/slash-commands.md
           - Built-in Terminal: using-fabric/app/built-in-terminal/built-in-terminal.md
           - Sub-Agents: using-fabric/app/sub-agents/sub-agents.md
+          - Companion: using-fabric/app/companion/companion.md
           - Directed Acyclic Graph (DAG): using-fabric/app/directed-acyclic-graph/directed-acyclic-graph.md
           - Worktrees: using-fabric/app/worktrees/worktrees.md
       - Core AI Workflows:

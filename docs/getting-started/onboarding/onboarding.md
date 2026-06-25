@@ -1,54 +1,69 @@
-# Onboarding
+# Onboarding: Meet Visr
 
-🚧 Video tutorial is in progress.
+## What is Onboarding in Fabric?
 
-The first time you open Fabric, a short guided onboarding gets you set up and ready to work. It learns a little about what you're working on, helps you connect an AI model, and gives you a quick tour of the interface — so you're not staring at a blank screen wondering where to start.
+The first time you open Fabric, you're greeted by **Visr** (rhymes with "wiser") — a voice-first setup agent that tunes Fabric around the work you actually do. Instead of a click-through tour, you have a short conversation: you say what you're working on, Visr asks a few quick questions about your project and how you like to work, and while you talk it quietly researches your public and on-disk footprint to skip questions it can already answer. When you're done, Visr opens a workspace built for that project — often with the first files already scaffolded and the dev server running — so your very first screen in Fabric is your own project, not a blank page.
 
-You can **skip at any point** and jump straight into a project if you'd rather explore on your own.
+The whole thing is voice-first but works just as well if you type, and you can skip straight to a blank workspace at any time.
 
----
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../assets/videos/onboarding.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
-## The Flow
+## When to use Onboarding
 
-Onboarding happens in three short phases.
+Onboarding is most useful when you want to:
 
-### 1. A quick conversation
+* **Get set up fast on your first launch**: It starts automatically the first time you open Fabric after installing it.
+* **Spin up a brand-new project**: Re-run it when you want Fabric to create and tailor a fresh workspace through conversation rather than wiring it up by hand.
+* **Let Fabric learn your context**: The facts Visr gathers — your stack, your audience, how much detail you like — personalize Fabric's later suggestions.
 
-Fabric opens with a friendly, conversational setup. You can **talk or type** — whichever you prefer (it automatically falls back to typing if there's no microphone). It asks a few light questions to understand:
+## How to use Onboarding
 
-- What you're working on and what you want to achieve
-- The current state of your project
-- How you like to work — your pace, and how much detail and context you want from the assistant
+### Step 1: Say hello to Visr
 
-This is optional and quick. Its only purpose is to help Fabric tailor its help to you from the very first message. Your answers stay on your computer.
+On first launch, Visr introduces itself over the glowing orb and opens with a simple question: *"So, what are you looking to do?"* The orb reacts as it listens and speaks. Just talk — or type your reply in the box — to answer. A privacy line spells out that the background research stays on your machine and that you can stop it at any time.
 
-### 2. A short welcome tour
+![Visr greets you on first launch](../../assets/screenshots/onboarding/1.png)
 
-Next, a brief carousel introduces a few essentials:
+### Step 2: Tell Visr what you're working on
 
-- **Multi-Chat** — run several conversations in parallel, so you can keep working while the AI works.
-- **Shortcuts** — a handful of the most useful keyboard shortcuts to move quickly.
-- **Privacy** — what's collected (basic usage analytics) and, importantly, what's never collected (your prompts, messages, and files). Analytics can be turned off in settings.
+Describe your project in your own words ("a habit-tracker web app, mostly a personal project"). As you talk, the background-research panel fills in on the left — a "Done" card with what Visr found about you (name, role, what you build). This is what lets Visr skip questions it can already answer, like which languages and frameworks you tend to use. The research stays local, and you can stop it at any time.
 
-### 3. Connect a model and open a project
+![Visr researches you in the background](../../assets/screenshots/onboarding/2.png)
 
-Finally, a guided, point-and-click tour walks you through the two things you need to start:
+### Step 3: Confirm the details
 
-- **Connect an AI model** — add an API key from a provider like Anthropic, OpenAI, or Google, or point Fabric at a local model. You need at least one before you can chat. See [Models](../models/models.md).
-- **Open a project folder** — pick the folder you want to work in (an empty folder is fine).
+Each thing Visr learns appears as a small fact card on the right — "Hobby / personal", "Just me", and so on. Visr plays the details back to you so you can correct anything before it acts on them.
 
-Along the way, the tour highlights the key parts of the interface so you know where everything lives:
+![Facts stack up as Visr understands you](../../assets/screenshots/onboarding/3.png)
 
-- The **File Explorer** for browsing your project
-- **Chat History**, where every conversation is saved and reopenable
-- The **Database** panel
-- **Settings**
-- The **chat input** at the bottom — your main workspace — along with the model selector
+### Step 4: Let Visr propose your setup
 
----
+Once it has enough, Visr stops asking and starts proposing — weaving in what the research found: *"…based on your previous work with React and TypeScript, want me to set it up that way?"* Confirm or steer it somewhere else.
 
-## When It's Done
+![Visr proposes a stack based on what it found](../../assets/screenshots/onboarding/4.png)
 
-Once you've finished (or skipped) onboarding, you're fully set up: a project is open, at least one AI model is connected, and you know your way around the main panels. From here you can start a conversation, ask about your codebase, or kick off your first task.
+### Step 5: Watch your workspace build
 
-Want to run through it again later? You can **redo onboarding** from **Settings**.
+Visr hands off to Fabric, which scaffolds the project for real — creating the file tree, writing the starter files, and installing dependencies. You can watch the plan run in the chat while the file explorer fills in on the left.
+
+![Fabric scaffolds the project](../../assets/screenshots/onboarding/5.png)
+
+### Step 6: Start building
+
+When it's finished, you land in a working workspace: the project files on the left, a live preview of the running app on the right, and a verification summary in the chat (install built, dev server up, a quick smoke test passed). From here you're in normal Fabric — keep the conversation going to add the next feature.
+
+![The finished workspace with a live preview](../../assets/screenshots/onboarding/6.png)
+
+## Typing instead of talking
+
+Prefer to read and type? Use the **Speak / Type** and **Hear / Read** toggles at the top of the onboarding screen to switch input and output modes independently. Everything works the same — the orb, the research panel, the fact cards, and the handoff.
+
+## Skipping and redoing onboarding
+
+* **Skip it**: Choose **Skip — open a project** at any point to jump straight to a blank workspace or open an existing folder.
+* **Redo it later**: Open **Settings → Companion → Redo onboarding** and choose **Start onboarding again**. The app relaunches and runs the welcome flow from scratch. Anything you told Visr in conversation is cleared; facts the background scan inferred about you are kept.

@@ -1,6 +1,11 @@
 # Chat Orientation
 
-🚧 Video tutorial is in progress.
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/chat-orientation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 Fabric lets you arrange your chat tabs in one of two layouts — a **horizontal** strip along the top (the default) or a **vertical** list down the left side. Both behave identically; only the arrangement changes, so you can pick whichever fits your screen and the way you like to work.
 

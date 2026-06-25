@@ -1,5 +1,12 @@
 # Mémoire persistante
 
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../assets/videos/persistent-memory.mp4" type="video/mp4">
+  Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+</div>
+
 ## Qu'est-ce que la mémoire persistante ?
 
 La mémoire persistante est le moyen de donner à l'IA de Fabric un ensemble permanent d'instructions concernant votre projet — des choses qu'elle devrait toujours savoir, sans que vous ayez à les expliquer à chaque conversation.

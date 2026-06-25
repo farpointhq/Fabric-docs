@@ -81,8 +81,11 @@ plugins:
             Basics: 基本
             Settings: 設定
             Code Review: コードレビュー
+            Code Reference: コードリファレンス
+            Document Attachments: ドキュメントの添付
             Databases: データベース
             Tab Grouping: タブのグループ化
+            Chat Orientation: チャットの向き
             In-app browser: アプリ内ブラウザ
             Agentic Browser Usage: エージェントによるブラウザ操作
             Slash Commands: スラッシュコマンド
@@ -134,8 +137,11 @@ plugins:
             Basics: Notions de base
             Settings: Paramètres
             Code Review: Revue de code
+            Code Reference: Référence de code
+            Document Attachments: Pièces jointes de documents
             Databases: Bases de données
             Tab Grouping: Regroupement d'onglets
+            Chat Orientation: Orientation du chat
             In-app browser: Navigateur intégré
             Agentic Browser Usage: Utilisation du navigateur par l'agent
             Slash Commands: Commandes slash
@@ -247,8 +253,11 @@ nav:
           - Settings: using-fabric/app/settings/settings.md
           - Code Review: using-fabric/app/code-review/code-review.md
           - Code Diff: using-fabric/app/code-diff/code-diff.md
+          - Code Reference: using-fabric/app/code-reference/code-reference.md
+          - Document Attachments: using-fabric/app/document-attachments/document-attachments.md
           - Databases: using-fabric/app/databases/databases.md
           - Tab Grouping: using-fabric/app/tab-grouping/tab-grouping.md
+          - Chat Orientation: using-fabric/app/chat-orientation/chat-orientation.md
           - In-app browser: using-fabric/app/in-app-browser/in-app-browser.md
           - Agentic Browser Usage: using-fabric/app/agentic-browser-usage/agentic-browser-usage.md
           # - Computer Use: using-fabric/app/computer-use/computer-use.md

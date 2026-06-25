@@ -6,7 +6,7 @@
 
 ## General
 
-![General Settings](../../../../assets/screenshots/settings/1_general.png)
+![General Settings](../../../assets/screenshots/settings/1_general.png)
 
 **Project Description** — アプリケーションの簡単な概要を入力して、AI による支援をパーソナライズし、プロンプトの関連性を高めます。
 
@@ -24,7 +24,7 @@
 
 ## Models
 
-![Models Settings](../../../../assets/screenshots/settings/2_models.png)
+![Models Settings](../../../assets/screenshots/settings/2_models.png)
 
 **Helper Model** — リクエストを分析し、編集すべき関連ファイルを提案し、メインモデルが実行される前に簡潔なタブ名を提案する軽量な LLM です。Medium、Small、その他のティアから選択します。
 
@@ -45,7 +45,7 @@
 
 ## 権限
 
-![Permissions Settings](../../../../assets/screenshots/settings/3_permissions.png)
+![Permissions Settings](../../../assets/screenshots/settings/3_permissions.png)
 
 **Commands** — 明示的な承認なしに AI が実行できる安全なターミナルコマンドをホワイトリストに登録します。デフォルトで許可されているコマンドには、`ls`、`pwd`、`stat`、`file`、`du`、`df`、`cat`、`head`、`tail`、`grep` などが含まれます。「Add」ボタンを使用してカスタムコマンドを追加できます。
 
@@ -55,7 +55,7 @@
 
 ## スキル
 
-![Skills Settings](../../../../assets/screenshots/settings/4_skills.png)
+![Skills Settings](../../../assets/screenshots/settings/4_skills.png)
 
 **Agent Skills** — タスクが一致したときにエージェントがオンデマンドで読み込む、再利用可能な指示パックです。スキルは次のいずれかになります。
 
@@ -69,7 +69,7 @@
 
 ## MCP
 
-![MCP Settings](../../../../assets/screenshots/settings/5_mcp.png)
+![MCP Settings](../../../assets/screenshots/settings/5_mcp.png)
 
 **MCP Servers** — Model Context Protocol サーバーを追加・管理します。接続されたサーバーは、LLM が利用できるツール、リソース、プロンプトを公開します。各サーバーには、バージョン、ツールの数、接続状態が表示されます。既存のサーバーを管理するには **Disconnect**、**Edit**、**Remove** を使用し、新しいサーバーを接続するには **Add Server** を使用します。
 
@@ -85,7 +85,7 @@
 
 ## Terminal
 
-![Terminal Settings](../../../../assets/screenshots/settings/6_terminal.png)
+![Terminal Settings](../../../assets/screenshots/settings/6_terminal.png)
 
 **Default Profile** — 「+」ボタンで新しいターミナルを作成するときに使用されるシェルプロファイルです。以下の任意のプロファイルで「Set Default」をクリックすると変更できます。
 
@@ -102,7 +102,7 @@
 
 ## Shortcuts
 
-![Shortcuts Settings](../../../../assets/screenshots/settings/7_shortcuts.png)
+![Shortcuts Settings](../../../assets/screenshots/settings/7_shortcuts.png)
 
 **Diff Viewer**
 
@@ -139,7 +139,7 @@
 
 ## Privacy
 
-![Privacy Settings](../../../../assets/screenshots/settings/8_privacy.png)
+![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
 
 **Usage Analytics**
 
@@ -160,7 +160,7 @@ Fabric には、アプリケーションの改善に役立てるための自動�
 
 ## Benchmark
 
-![Benchmark Settings](../../../../assets/screenshots/settings/9_benchmark.png)
+![Benchmark Settings](../../../assets/screenshots/settings/9_benchmark.png)
 
 **Run Benchmark** — 標準化されたコーディングタスクでモデルのパフォーマンスを評価します。ドロップダウンからベンチマークを選択し、**Run Benchmark** をクリックして評価を開始します。
 

@@ -1,6 +1,11 @@
 # Planification du code avec Fabric
 
-🚧 Le tutoriel vidéo est en cours de préparation.
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../../../assets/videos/code-planning.mp4" type="video/mp4">
+  Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+</div>
 
 ## Qu'est-ce que la Planification du code avec Fabric ?
 
@@ -52,9 +57,23 @@ Vous pouvez suivre ce processus en direct dans la conversation — chaque appel 
 
 ---
 
+## Construire le plan
+
+Une fois le plan prêt, vous n'avez pas à le copier où que ce soit ni à lancer une commande à la main. Chaque plan généré est accompagné d'un bouton **Build** (Construire). Cliquez dessus, et Fabric reprend le plan et commence à l'implémenter directement — en préparant le travail et en transformant chaque changement prévu en code réel.
+
+C'est le chemin en un clic du plan vers le code fonctionnel :
+
+1. **Examinez** le plan dans le chat — développez les sections, demandez des modifications, ajustez la portée.
+2. Quand il vous convient, cliquez sur **Build**.
+3. Fabric implémente le plan, en traitant les changements au niveau des fichiers dans l'ordre établi par le plan, pour que vous puissiez voir la conception devenir du code.
+
+Comme Build part du plan que Fabric a déjà étudié, l'implémentation suit l'architecture, la séquence et la stratégie de test que vous avez examinées — et non une nouvelle supposition.
+
+---
+
 ## Une fois le plan généré
 
-Une fois le plan présent dans la conversation, vous avez plusieurs options :
+Outre le clic sur **Build**, une fois le plan dans le chat, vous avez plusieurs options :
 
 * **L'affiner de manière conversationnelle** — Posez des questions de suivi pour développer une section, demander des approches alternatives, ou ajuster la portée. Fabric mettra à jour le plan sur place.
 * **Le transmettre à `/implement`** — Enregistrez le plan dans un fichier markdown et transmettez son URL à la commande de barre oblique `/implement` pour l'exécuter dans un arbre de travail Git isolé.

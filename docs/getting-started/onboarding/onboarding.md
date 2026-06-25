@@ -6,6 +6,13 @@ The first time you open Fabric, you're greeted by **Visr** (rhymes with "wiser")
 
 The whole thing is voice-first but works just as well if you type, and you can skip straight to a blank workspace at any time.
 
+<div class="video-wrapper" markdown>
+<video controls width="100%" style="border-radius: 8px; margin: 1rem 0;">
+  <source src="../../../assets/videos/onboarding.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 ## When to use Onboarding
 
 Onboarding is most useful when you want to:

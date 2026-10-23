@@ -8,7 +8,7 @@
 
 Cessez de choisir entre vitesse et qualité. Fabric vous donne des superpouvoirs de codage par IA tout en vous laissant aux commandes.
 
-[Rejoindre la bêta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Rejoindre la bêta](https://codewithfabric.com/download){ .md-button .md-button--primary }
 [Voir ce qui est possible](#what-can-you-build){ .md-button }
 
 </div>
@@ -29,7 +29,7 @@ Fabric est différent. Nous l'avons conçu pour les développeurs qui veulent la
 
     Observez l'IA raisonner sur votre problème en temps réel. Plus de boîtes noires — comprenez *pourquoi* elle suggère ce qu'elle suggère, afin de pouvoir faire confiance à ses décisions (ou les corriger).
 
-    [:octicons-arrow-right-24: Comment ça marche](features/agentic-mode.md)
+    [:octicons-arrow-right-24: Comment ça marche](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 -   :material-swap-horizontal:{ .lg .middle } **Choisissez le bon modèle pour la tâche**
 
@@ -37,7 +37,7 @@ Fabric est différent. Nous l'avons conçu pour les développeurs qui veulent la
 
     Utilisez des modèles rapides pour les tâches simples, des modèles puissants pour les raisonnements complexes. Changez en cours de conversation. Vous contrôlez le compromis coût-qualité.
 
-    [:octicons-arrow-right-24: Sélection de modèle](features/models.md)
+    [:octicons-arrow-right-24: Sélection de modèle](getting-started/models/models.md)
 
 -   :material-tab:{ .lg .middle } **Travaillez sur tout à la fois**
 
@@ -45,7 +45,7 @@ Fabric est différent. Nous l'avons conçu pour les développeurs qui veulent la
 
     Jonglez avec les corrections de bugs, le développement de fonctionnalités et l'exploration de code en parallèle. Chaque conversation conserve son contexte — fini de perdre le fil de vos pensées.
 
-    [:octicons-arrow-right-24: Espace de travail de conversation](guide/chat.md)
+    [:octicons-arrow-right-24: Espace de travail de conversation](using-fabric/app/chat-orientation/chat-orientation.md)
 
 -   :material-shield-check:{ .lg .middle } **Votre code, votre contrôle**
 
@@ -53,7 +53,7 @@ Fabric est différent. Nous l'avons conçu pour les développeurs qui veulent la
 
     Chaque modification de fichier requiert votre approbation. Piste d'audit complète des actions de l'IA. Vos clés API, vos données, vos règles.
 
-    [:octicons-arrow-right-24: Sécurité et confidentialité](getting-started/configuration.md)
+    [:octicons-arrow-right-24: Sécurité et confidentialité](customize-fabric/permissions/permissions.md)
 
 </div>
 
@@ -92,7 +92,7 @@ and make sure the tests still pass."
 
 Vous verrez exactement ce qu'il prévoit de faire, approuverez chaque étape et le regarderez travailler. Pas de surprises, pas de commits mystérieux, pas de « qu'est-ce qu'il vient de faire ? ».
 
-[:octicons-arrow-right-24: Voir le mode agentique en action](features/agentic-mode.md)
+[:octicons-arrow-right-24: Voir le mode agentique en action](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 ### Votre base de code, parfaitement comprise
 
@@ -148,7 +148,7 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     Disponible pour macOS, Windows et Linux. Installation en un clic, sans dépendances.
 
-    [:octicons-arrow-right-24: Télécharger Fabric](getting-started/installation.md)
+    [:octicons-arrow-right-24: Télécharger Fabric](getting-started/quickstart/quickstart.md)
 
 -   :material-key:{ .lg .middle } **2. Connectez votre IA**
 
@@ -156,7 +156,7 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     Ajoutez une clé API d'Anthropic, OpenAI, Google ou d'autres. Des paliers gratuits sont disponibles chez Google, Mistral et OpenRouter.
 
-    [:octicons-arrow-right-24: Guide de configuration](getting-started/configuration.md)
+    [:octicons-arrow-right-24: Guide de configuration](getting-started/models/models.md)
 
 -   :material-rocket-launch:{ .lg .middle } **3. Ouvrez un projet**
 
@@ -164,7 +164,7 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     Pointez Fabric vers votre base de code et commencez à poser des questions. Il apprend votre code au fur et à mesure.
 
-    [:octicons-arrow-right-24: Démarrage rapide](getting-started/quickstart.md)
+    [:octicons-arrow-right-24: Démarrage rapide](getting-started/quickstart/quickstart.md)
 
 </div>
 
@@ -214,7 +214,7 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     Plongez plus en profondeur dans les fonctionnalités de Fabric grâce à nos guides.
 
-    [:octicons-arrow-right-24: Parcourir la documentation](guide/overview.md)
+    [:octicons-arrow-right-24: Parcourir la documentation](using-fabric/app/basics/basic-functionality.md)
 
 -   :material-github:{ .lg .middle } **Participez**
 
@@ -230,7 +230,7 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     Maîtrisez les raccourcis clavier pour filer à travers votre flux de travail.
 
-    [:octicons-arrow-right-24: Référence des raccourcis](reference/shortcuts.md)
+    [:octicons-arrow-right-24: Référence des raccourcis](learn/shortcuts/shortcuts.md)
 
 </div>
 
@@ -240,6 +240,6 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
 **Prêt à coder plus vite sans le chaos ?**
 
-[Obtenir Fabric gratuitement](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Obtenir Fabric gratuitement](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 </div>

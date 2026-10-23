@@ -14,7 +14,7 @@
 
     Apple Silicon（M1/M2/M3/M4）と Intel Mac に対応。macOS 12 以降。
 
-    [Mac 用をダウンロード](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Mac 用をダウンロード](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 -   :material-microsoft-windows:{ .lg .middle } **Windows**
 
@@ -22,7 +22,7 @@
 
     Windows 10 以降（64 ビット）。
 
-    [Windows 用をダウンロード](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Windows 用をダウンロード](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 -   :material-linux:{ .lg .middle } **Linux**
 
@@ -30,7 +30,7 @@
 
     AppImage または .deb パッケージ。Ubuntu 20.04 以降または同等の環境。
 
-    [Linux 用をダウンロード](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Linux 用をダウンロード](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 </div>
 

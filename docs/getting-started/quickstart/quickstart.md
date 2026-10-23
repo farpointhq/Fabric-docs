@@ -14,7 +14,7 @@
 
     Works on Apple Silicon (M1/M2/M3/M4) and Intel Macs. macOS 12 or later.
 
-    [Download for Mac](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Download for Mac](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 -   :material-microsoft-windows:{ .lg .middle } **Windows**
 
@@ -22,7 +22,7 @@
 
     Windows 10 or later (64-bit).
 
-    [Download for Windows](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Download for Windows](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 -   :material-linux:{ .lg .middle } **Linux**
 
@@ -30,7 +30,7 @@
 
     AppImage or .deb package. Ubuntu 20.04+ or equivalent.
 
-    [Download for Linux](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+    [Download for Linux](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 </div>
 

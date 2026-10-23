@@ -8,7 +8,7 @@
 
 Stop choosing between speed and quality. Fabric gives you AI coding superpowers while keeping you in the driver's seat.
 
-[Join the Beta](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Join the Beta](https://codewithfabric.com/download){ .md-button .md-button--primary }
 [See What's Possible](#what-can-you-build){ .md-button }
 
 </div>
@@ -29,7 +29,7 @@ Fabric is different. We built it for developers who want the **velocity of AI** 
 
     Watch the AI reason through your problem in real-time. No more black boxes—understand *why* it suggests what it suggests, so you can trust (or correct) its decisions.
 
-    [:octicons-arrow-right-24: How it works](features/agentic-mode.md)
+    [:octicons-arrow-right-24: How it works](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 -   :material-swap-horizontal:{ .lg .middle } **Choose the Right Model for the Job**
 
@@ -37,7 +37,7 @@ Fabric is different. We built it for developers who want the **velocity of AI** 
 
     Use fast models for quick tasks, powerful ones for complex reasoning. Switch mid-conversation. You're in control of the cost-quality tradeoff.
 
-    [:octicons-arrow-right-24: Model selection](features/models.md)
+    [:octicons-arrow-right-24: Model selection](getting-started/models/models.md)
 
 -   :material-tab:{ .lg .middle } **Work on Everything at Once**
 
@@ -45,7 +45,7 @@ Fabric is different. We built it for developers who want the **velocity of AI** 
 
     Juggle bug fixes, feature development, and code exploration in parallel. Each conversation keeps its context—no more losing your train of thought.
 
-    [:octicons-arrow-right-24: Chat workspace](guide/chat.md)
+    [:octicons-arrow-right-24: Chat workspace](using-fabric/app/chat-orientation/chat-orientation.md)
 
 -   :material-shield-check:{ .lg .middle } **Your Code, Your Control**
 
@@ -53,7 +53,7 @@ Fabric is different. We built it for developers who want the **velocity of AI** 
 
     Every file change requires your approval. Full audit trail of AI actions. Your API keys, your data, your rules.
 
-    [:octicons-arrow-right-24: Security & privacy](getting-started/configuration.md)
+    [:octicons-arrow-right-24: Security & privacy](customize-fabric/permissions/permissions.md)
 
 </div>
 
@@ -92,7 +92,7 @@ and make sure the tests still pass."
 
 You'll see exactly what it plans to do, approve each step, and watch it work. No surprises, no mystery commits, no "what did it just do?"
 
-[:octicons-arrow-right-24: See agentic mode in action](features/agentic-mode.md)
+[:octicons-arrow-right-24: See agentic mode in action](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 ### Your Codebase, Fully Understood
 
@@ -148,7 +148,7 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
     Available for macOS, Windows, and Linux. One-click install, no dependencies.
 
-    [:octicons-arrow-right-24: Download Fabric](getting-started/installation.md)
+    [:octicons-arrow-right-24: Download Fabric](getting-started/quickstart/quickstart.md)
 
 -   :material-key:{ .lg .middle } **2. Connect Your AI**
 
@@ -156,7 +156,7 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
     Add an API key from Anthropic, OpenAI, Google, or others. Free tiers available from Google, Mistral, and OpenRouter.
 
-    [:octicons-arrow-right-24: Setup guide](getting-started/configuration.md)
+    [:octicons-arrow-right-24: Setup guide](getting-started/models/models.md)
 
 -   :material-rocket-launch:{ .lg .middle } **3. Open a Project**
 
@@ -164,7 +164,7 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
     Point Fabric at your codebase and start asking questions. It learns your code as you go.
 
-    [:octicons-arrow-right-24: Quick start](getting-started/quickstart.md)
+    [:octicons-arrow-right-24: Quick start](getting-started/quickstart/quickstart.md)
 
 </div>
 
@@ -214,7 +214,7 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
     Dive deeper into Fabric's features with our guides.
 
-    [:octicons-arrow-right-24: Browse documentation](guide/overview.md)
+    [:octicons-arrow-right-24: Browse documentation](using-fabric/app/basics/basic-functionality.md)
 
 -   :material-github:{ .lg .middle } **Get Involved**
 
@@ -230,7 +230,7 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
     Master keyboard shortcuts to fly through your workflow.
 
-    [:octicons-arrow-right-24: Shortcuts reference](reference/shortcuts.md)
+    [:octicons-arrow-right-24: Shortcuts reference](learn/shortcuts/shortcuts.md)
 
 </div>
 
@@ -240,6 +240,6 @@ Use Fabric as a thinking partner for architecture decisions, product tradeoffs, 
 
 **Ready to code faster without the chaos?**
 
-[Get Fabric Free](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Get Fabric Free](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 </div>

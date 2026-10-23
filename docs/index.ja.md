@@ -8,7 +8,7 @@
 
 スピードと品質のどちらかを選ぶのはもう終わりです。Fabric は、あなたが運転席に座ったまま、AI コーディングのスーパーパワーを手に入れられます。
 
-[ベータに参加する](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[ベータに参加する](https://codewithfabric.com/download){ .md-button .md-button--primary }
 [何ができるか見る](#what-can-you-build){ .md-button }
 
 </div>
@@ -29,7 +29,7 @@ Fabric は違います。私たちは、内部で何が起きているのかわ�
 
     AI があなたの問題を推論していく様子をリアルタイムで見られます。もうブラックボックスはありません——*なぜ* その提案をするのかを理解できるので、その判断を信頼する（あるいは修正する）ことができます。
 
-    [:octicons-arrow-right-24: 仕組み](features/agentic-mode.md)
+    [:octicons-arrow-right-24: 仕組み](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 -   :material-swap-horizontal:{ .lg .middle } **仕事に合ったモデルを選ぶ**
 
@@ -37,7 +37,7 @@ Fabric は違います。私たちは、内部で何が起きているのかわ�
 
     手早いタスクには高速なモデルを、複雑な推論には強力なモデルを使いましょう。会話の途中で切り替えられます。コストと品質のトレードオフはあなたが握っています。
 
-    [:octicons-arrow-right-24: モデル選択](features/models.md)
+    [:octicons-arrow-right-24: モデル選択](getting-started/models/models.md)
 
 -   :material-tab:{ .lg .middle } **すべてを同時に進める**
 
@@ -45,7 +45,7 @@ Fabric は違います。私たちは、内部で何が起きているのかわ�
 
     バグ修正、機能開発、コードの探索を並行して進められます。各会話がそれぞれのコンテキストを保持するので、考えの流れを見失うことはありません。
 
-    [:octicons-arrow-right-24: チャットワークスペース](guide/chat.md)
+    [:octicons-arrow-right-24: チャットワークスペース](using-fabric/app/chat-orientation/chat-orientation.md)
 
 -   :material-shield-check:{ .lg .middle } **あなたのコード、あなたの主導権**
 
@@ -53,7 +53,7 @@ Fabric は違います。私たちは、内部で何が起きているのかわ�
 
     すべてのファイル変更にはあなたの承認が必要です。AI の操作の完全な監査証跡。あなたの API キー、あなたのデータ、あなたのルール。
 
-    [:octicons-arrow-right-24: セキュリティとプライバシー](getting-started/configuration.md)
+    [:octicons-arrow-right-24: セキュリティとプライバシー](customize-fabric/permissions/permissions.md)
 
 </div>
 
@@ -92,7 +92,7 @@ and make sure the tests still pass."
 
 何をしようとしているかを正確に確認し、各ステップを承認し、それが動く様子を見られます。驚きもなく、謎のコミットもなく、「今何をしたんだ？」もありません。
 
-[:octicons-arrow-right-24: エージェントモードの動作を見る](features/agentic-mode.md)
+[:octicons-arrow-right-24: エージェントモードの動作を見る](using-fabric/core-ai-workflows/code-planning/code-planning.md)
 
 ### あなたのコードベースを完全に理解
 
@@ -148,7 +148,7 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     macOS、Windows、Linux で利用可能。ワンクリックインストール、依存関係なし。
 
-    [:octicons-arrow-right-24: Fabric をダウンロード](getting-started/installation.md)
+    [:octicons-arrow-right-24: Fabric をダウンロード](getting-started/quickstart/quickstart.md)
 
 -   :material-key:{ .lg .middle } **2. AI を接続**
 
@@ -156,7 +156,7 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     Anthropic、OpenAI、Google などの API キーを追加します。Google、Mistral、OpenRouter からは無料枠も利用できます。
 
-    [:octicons-arrow-right-24: セットアップガイド](getting-started/configuration.md)
+    [:octicons-arrow-right-24: セットアップガイド](getting-started/models/models.md)
 
 -   :material-rocket-launch:{ .lg .middle } **3. プロジェクトを開く**
 
@@ -164,7 +164,7 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     Fabric にあなたのコードベースを指定して、質問を始めましょう。進めるうちにあなたのコードを学習します。
 
-    [:octicons-arrow-right-24: クイックスタート](getting-started/quickstart.md)
+    [:octicons-arrow-right-24: クイックスタート](getting-started/quickstart/quickstart.md)
 
 </div>
 
@@ -214,7 +214,7 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     ガイドで Fabric の機能をさらに深く掘り下げましょう。
 
-    [:octicons-arrow-right-24: ドキュメントを見る](guide/overview.md)
+    [:octicons-arrow-right-24: ドキュメントを見る](using-fabric/app/basics/basic-functionality.md)
 
 -   :material-github:{ .lg .middle } **参加する**
 
@@ -230,7 +230,7 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     キーボードショートカットをマスターして、ワークフローを駆け抜けましょう。
 
-    [:octicons-arrow-right-24: ショートカットリファレンス](reference/shortcuts.md)
+    [:octicons-arrow-right-24: ショートカットリファレンス](learn/shortcuts/shortcuts.md)
 
 </div>
 
@@ -240,6 +240,6 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
 **混乱なしでより速くコーディングする準備はできましたか？**
 
-[Fabric を無料で入手](https://farpointalpha.com/fabric){ .md-button .md-button--primary }
+[Fabric を無料で入手](https://codewithfabric.com/download){ .md-button .md-button--primary }
 
 </div>

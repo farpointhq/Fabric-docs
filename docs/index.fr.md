@@ -216,13 +216,13 @@ Utilisez Fabric comme partenaire de réflexion pour les décisions d'architectur
 
     [:octicons-arrow-right-24: Parcourir la documentation](using-fabric/app/basics/basic-functionality.md)
 
--   :material-github:{ .lg .middle } **Participez**
+-   :fontawesome-brands-discord:{ .lg .middle } **Participez**
 
     ---
 
     Partagez vos commentaires, demandez des fonctionnalités et aidez à façonner l'avenir de Fabric.
 
-    [:octicons-arrow-right-24: GitHub Discussions](https://github.com/farpointhq/Fabric/discussions)
+    [:octicons-arrow-right-24: Rejoindre notre Discord](https://discord.gg/jf278wUZNz)
 
 -   :material-keyboard:{ .lg .middle } **Astuces pour utilisateurs avancés**
 

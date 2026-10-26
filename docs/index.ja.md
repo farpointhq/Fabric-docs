@@ -216,13 +216,13 @@ Fabric にモジュールを指定して、README、API リファレンス、あ
 
     [:octicons-arrow-right-24: ドキュメントを見る](using-fabric/app/basics/basic-functionality.md)
 
--   :material-github:{ .lg .middle } **参加する**
+-   :fontawesome-brands-discord:{ .lg .middle } **参加する**
 
     ---
 
     フィードバックを共有し、機能をリクエストし、Fabric の未来を形作る手助けをしましょう。
 
-    [:octicons-arrow-right-24: GitHub Discussions](https://github.com/farpointhq/Fabric/discussions)
+    [:octicons-arrow-right-24: Discord に参加する](https://discord.gg/jf278wUZNz)
 
 -   :material-keyboard:{ .lg .middle } **パワーユーザーのヒント**
 

@@ -1,6 +1,6 @@
 # Fabric Documentation
 
-Official documentation for [Fabric](https://github.com/farpointhq/Fabric) - AI-powered code assistant.
+Official documentation for [Fabric](https://codewithfabric.com) - AI-powered code assistant.
 
 ## Live Site
 

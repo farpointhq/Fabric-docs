@@ -228,9 +228,6 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/jf278wUZNz
       name: Fabric on Discord
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
   version:
     provider: mike
   generator: false

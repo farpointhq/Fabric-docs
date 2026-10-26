@@ -139,12 +139,6 @@ Chaque compétence peut être activée ou désactivée individuellement. Utilise
 
 ## Privacy
 
-![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
-
-**Usage Analytics**
-
-* **Allow usage analytics** — Partagez les données d'interaction pour aider à améliorer l'application. Aucun contenu de prompt ni aucun fichier n'est jamais collecté.
-
 **Error Reporting Settings**
 
 Fabric inclut un signalement automatique des erreurs pour aider à améliorer l'application. Lorsqu'une erreur se produit, vous pouvez :

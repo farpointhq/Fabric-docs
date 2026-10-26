@@ -139,12 +139,6 @@
 
 ## Privacy
 
-![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
-
-**Usage Analytics**
-
-* **Allow usage analytics** — アプリの改善に役立てるために、操作データを共有します。プロンプトの内容やファイルが収集されることは一切ありません。
-
 **Error Reporting Settings**
 
 Fabric には、アプリケーションの改善に役立てるための自動エラー報告機能が含まれています。エラーが発生した場合、次のことができます。

@@ -139,12 +139,6 @@ Each skill can be toggled on or off individually. Use **Browse Marketplace** to 
 
 ## Privacy
 
-![Privacy Settings](../../../assets/screenshots/settings/8_privacy.png)
-
-**Usage Analytics**
-
-* **Allow usage analytics** — Share interaction data to help improve the app. No prompt content or files are ever collected.
-
 **Error Reporting Settings**
 
 Fabric includes automatic error reporting to help improve the application. When an error occurs, you can:
